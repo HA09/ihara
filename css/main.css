@@ -1,0 +1,744 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	position: relative;
+	font-family: HarenosoraMincho;
+	color: #000000;
+	font-size: 16px;
+	background:#ffffff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face 
+{
+  font-family: HarenosoraMincho;
+  src: url(‘../fonts/Harenosora.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face 
+{
+  font-family: Hirakakupro;
+  src: url(‘../fonts/hirakakupro-w3.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; 
+}
+
+div.inner
+{
+	margin: 0 auto;
+    height: auto;
+    display: block;
+    max-width: 970px;
+	background:#ffffff;
+}
+
+div.clear-fix
+{
+	clear: both;
+}
+
+@keyframes example 
+{
+	0%   {transform: scale(.2);}
+	25%  {transform: scale(.3);}
+	50%  {transform: scale(.5);}
+	75%  {transform: scale(.7);}
+	100% {transform: scale(1.0);}
+}
+
+p.title_en
+{
+	color: #d31f1e;
+	font-family: HarenosoraMincho;
+	font-size: 15px;
+	text-align: center;
+	padding-top:60px;
+				}
+
+p.title_jp
+{
+	color: #000000;
+	font-family: HarenosoraMincho;
+	font-size: 30px;
+	text-align: center;
+	padding:10px 0px 48px 0px;
+}
+
+div.nav
+{
+	width: 30px;
+    position: fixed;
+    top: 25px;
+    left: 38px;
+}	
+
+div.nav ul
+{
+	padding:10px 0px 0px 5px;
+	width: 15px;
+}
+
+div.nav ul li
+{
+	border-bottom: 2px solid #adadad;
+    padding: 13px 0px 13px 0px;
+}
+
+div.nav ul li:first-child
+{
+	border-bottom: 2px solid #adadad;
+    padding: 0px 0px 13px 0px;
+}	
+
+div.nav ul li:last-child
+{
+    padding: 13px 0px 0px 0px;
+	border-bottom: 2px solid #adadad;
+}
+
+div.nav ul li:last-child
+{
+    padding: 13px 0px 0px 0px;
+	border-bottom: 0px solid #adadad;
+}
+
+div.nav ul li a
+{
+	text-decoration:none;
+	color:#000000;
+}
+
+div.nav ul li a:hover
+{
+
+	text-decoration:none;
+	color:#db0300;
+}
+
+img.banner_pc
+{
+	width:100%;
+}	
+
+img.btn_banner_pc
+{
+	position: fixed;
+    top: 245px;
+    right: 0px;
+}
+
+a:hover img.btn_banner_pc
+{
+	opacity: 0.7;
+}	
+
+div.kazunoko
+{
+	background:#fcfbfb;
+	margin-top: -3px;
+}
+
+div.text-kazunoko
+{
+	padding-top:60px;
+}
+
+div.text-kazunoko p
+{
+	padding: 0px 100px 35px 100px;
+	line-height: 23px;
+}
+
+div.text-kazunoko p:last-child
+{
+	padding:0px 100px 0px 100px;
+	line-height: 23px;
+}
+
+div.products
+{
+	margin-top:100px;
+}
+
+div.product 
+{
+    width: 100%;
+    padding: 5% 0% 5% 0%;
+    float: left;
+}
+
+p.title_pro 
+{
+    width: 16px;
+    border-top: 2px solid #adadad;
+    padding-top: 5px;
+	float: left;
+}
+
+div.text_pro
+{
+	width: 57%;
+    padding-left: 7%;
+	float: left;
+}
+
+p.text_pro_1
+{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+p.text_pro_2
+{
+	font-size:16px;
+}
+
+p.img_pro
+{
+	float: right;
+    width: 30%;
+    margin-top: -5%; 
+}
+
+img.img_product
+{
+	animation-name: example;
+	animation-duration: 4s;
+	width: 90%;
+}
+
+div.order
+{
+	width:100%;
+	border-top:4px double #151d1d;
+	border-bottom:1px solid #b8bbbb;
+	height: 125px;
+}
+
+div.phone
+{
+	width: 295px;
+    float: left;
+    margin:20px 25px 25px 10px;
+}
+
+div.phone h3 , div.fax h3
+{
+	padding-bottom: 7px;
+}
+
+div.phone p , div.fax p
+{
+	font-size:13px;
+	padding-top: 7px;
+}
+
+div.phone span , div.fax span
+{
+	font-size:24px;
+}
+
+
+div.fax
+{
+	width: 295px;
+    float: left;
+    margin:20px 0px 25px 0px;
+}
+
+div.btn_order
+{
+	float:right;
+	margin:20px 0px 25px 0px;
+}
+
+div.spirits
+{
+	margin-top: 100px;
+}
+
+div.img_spirits ul , div.img_company ul
+{
+	width: 100%;
+}
+
+div.img_spirits ul li
+{
+	width: 19.176%;
+    display: inline-block;
+	margin-left:0.2%;
+}
+
+div.img_spirits ul li:first-child 
+{
+	margin-left:0%;
+}
+
+img.ihara_pc
+{
+	animation-name: example;
+	animation-duration: 4s;
+	width:100%;
+}	
+
+img.ihara_sm , img.company_sm , img.banner_sm , img.logo_sm , img.btn_content_sm , img.btn_banner_sm
+{
+	display:none;
+}	
+
+div.company
+{
+	margin-top: 100px;
+}
+
+div.img_company ul li:first-child
+{
+	width: 49.5%;
+    margin-right: 0.1%;
+	display: inline-block;
+}
+
+div.img_company ul li:nth-child(2)
+{
+	width: 49.5%;
+	display: inline-block;
+}
+
+li.pd_company
+{
+	width: 24.3%;
+	margin-right: 0.1%;
+    margin-top: 0.9%;
+	display: inline-block;
+}
+
+div.img_company ul li:nth-child(6)
+{
+	width: 24.3%;
+	margin-right: 0%;
+    margin-top: 0.9%;
+	display: inline-block;
+}
+
+img.company_pc
+{
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+div.information
+{
+	margin-top: 100px;
+}
+
+dl dt 
+{
+    font-family: Hirakakupro;
+    font-size: 16px;
+    font-style: normal;
+    color: #999999;
+    float: left;
+    padding: 12px 45px 5px 5px;
+}
+
+dl dd 
+{
+    padding: 12px 0px 5px 0px;
+    border-bottom: 1px dotted #7f7f7f;
+    text-decoration: underline;
+}
+
+dl dd a
+{
+	font-family: Hirakakupro;
+	font-size: 16px;
+	color: #000000;
+}
+
+dl dd a:hover
+{
+	font-family: Hirakakupro;
+	font-size: 16px;
+	color:#dd0300;
+}
+
+div.footer
+{
+	margin-top:155px;
+}
+
+div.nav_footer
+{
+	width:100%;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+div.nav_footer ul li
+{
+	display: inline-block;
+}
+
+div.nav_footer ul li a
+{
+	text-decoration: none;
+	color:#999999;
+	font-family:Hirakakupro;
+	font-size:13px;
+}
+
+div.nav_footer ul li a:hover
+{
+	text-decoration: none;
+	color:#dd0300;
+	font-family:Hirakakupro;
+	font-size:13px;
+}
+
+div.nav_footer ul li:nth-child(2n)
+{
+	display: inline-block;
+	border-right: 1px solid #999999;
+	padding:0px 10px 0px 10px;
+	border-left: 1px solid #999999;
+}
+
+div.nav_footer ul li:nth-child(2n) a
+{
+	text-decoration: none;
+	color:#999999;
+	font-family:Hirakakupro;
+	font-size:13px;
+}
+
+div.nav_footer ul li:nth-child(2n) a:hover
+{
+	text-decoration: none;
+	color:#dd0300;
+	font-family:Hirakakupro;
+	font-size:13px;
+}
+
+div.copyright
+{
+	background:#000000;
+	text-align: center;
+	font-family: Hirakakupro;
+	font-size: 12px;
+	font-style: normal;
+	color: #ffffff;
+	text-align:center;
+	padding:20px;
+}
+
+@media only screen and (max-width: 750px) 
+{
+	img.banner_pc , img.logo_pc , img.btn_banner_pc , img.company_pc  , img.btn_content_pc
+	{
+		display:none;
+	}
+	
+	@keyframes example 
+	{
+		0%   {transform: scale(.2);}
+		25%  {transform: scale(.3);}
+		50%  {transform: scale(.5);}
+		75%  {transform: scale(.7);}
+		100% {transform: scale(1.0);}
+	}
+	
+	img.logo_sm
+	{
+		padding-left: 1%;
+		display: inline-block;
+		width: 50%;
+		max-width: 323px;
+	}
+
+	img.banner_sm
+	{		
+		width:100%;
+		display:block;
+		padding-top: 25px;
+	}
+	
+	img.btn_banner_sm
+	{
+		position: absolute;
+		display: block;
+		right: 1%;
+		top: 0%;
+		width: 45%;
+		max-width: 200px;
+	}
+	
+	div.inner
+	{
+		max-width:750px;
+		margin: 0 auto;
+	    height: auto;
+	    display: block;
+	    min-width:320px;
+	    width:100%;
+		background:#ffffff;
+	}
+	
+	div.nav 
+	{
+		width: 95%;
+		position: absolute;
+		top: 0.2%;
+		left: 2%;
+	}
+	
+	div.nav ul 
+	{
+		width: 90%;
+		padding: 0px 0px 0px 1%;
+	}
+	
+	div.nav ul li
+	{
+		display: inline-block;
+		border-bottom: 0px solid #adadad;
+		padding: 0% 1% 0% 0%;
+		border-right: 2px solid #adadad;
+	}
+	
+	div.nav ul li:first-child
+	{
+		display: inline-block;
+		border-right: 2px solid #adadad;
+		border-bottom: 0px solid #adadad;
+		padding: 0% 1% 0% 0%;
+	}
+	
+	div.nav ul li:last-child 
+	{
+		padding: 0% 0% 0% 0%;
+		border-bottom: 0px solid #adadad;
+		border-right: 0px solid #adadad;
+	}
+	
+	div.nav ul li a 
+	{
+		text-decoration: none;
+		color: #000000;
+		display: block;
+	}
+	
+	dl dt 
+	{
+		font-family: Hirakakupro;
+		font-size: 16px;
+		font-style: normal;
+		color: #999999;
+		padding: 5% 0px 1% 2%;
+		float: none;
+	}
+	
+	img.btn_content_sm
+	{
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		animation-name: example;
+		animation-duration: 4s;
+	}
+	
+	div.text-kazunoko p 
+	{
+		padding: 0px 7% 35px 7%;
+		line-height: 23px;
+	}
+	
+	div.text-kazunoko p:last-child 
+	{
+		padding: 0px 7% 0px 7%;
+		line-height: 23px;
+	}
+	
+	div.products , div.spirits , div.information , div.company
+	{
+		margin-top: 5%;
+	}
+	
+	div.product 
+	{
+		width: 100%;
+		padding-top: 7%;
+	}
+	
+	div.phone , div.fax
+	{
+		width: 80%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	div.order 
+	{
+		width: 100%;
+		border-top: 4px double #151d1d;
+		border-bottom: 1px solid #b8bbbb;
+		height: 10%;
+		margin-top: 10px;
+	}
+	
+	dl dd 
+	{
+		padding: 0% 2% 5% 2%;
+		border-bottom: 1px dotted #7f7f7f;
+		text-decoration: underline;
+	}
+	
+	div.btn_order 
+	{
+		float: none;
+		margin: 20px 0px 25px 0px;
+	}
+	
+	div.img_spirits ul , div.img_company ul
+	{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	div.img_spirits ul li 
+	{
+		width: 32.4%;
+		display: inline-block;
+		margin-top: 8px;
+		margin-left: 0%;
+	}
+	
+	p.title_pro 
+	{
+		width: 16px;
+		border-top: 2px solid #adadad;
+		padding-top: 5px;
+		float: left;
+		margin-left: 1.5%;
+	}
+	
+	div.img_company ul li:nth-child(2n+7)
+	{
+		width: 49%;
+		display: inline-block;
+		margin-right: 0.6%;
+		margin-bottom: 1.6%;
+	}
+	
+	div.img_company ul li:nth-child(2n+8)
+	{
+		width: 49%;
+		display: inline-block;
+		margin-bottom: 1.6%;
+	}
+	
+	img.company_sm
+	{
+		display:block;
+		width: 100%;
+	}
+	
+	p.text_pro_1 
+	{
+		font-size: 16px;
+		line-height: 25px;
+	}
+	
+	p.text_pro_2 
+	{
+		font-size: 13px;
+	}
+	
+	p.img_pro 
+	{
+		width: 30%;
+		margin-top: 1%;
+		float: left;
+		margin-left: 2%;
+	}
+	
+}
+
+@media only screen and (min-width: 751px) and (max-width:1130px) 
+{
+
+	body 
+	{
+		line-height: 1;
+		position: relative;
+		font-family: HarenosoraMincho;
+		color: #000000;
+		font-size: 13px;
+		background: #ffffff;
+	}
+	
+	div.nav 
+	{
+		width: 30px;
+		top: 25px;
+		left: 38px;
+		position: absolute;
+	}
+	
+	img.btn_banner_pc 
+	{
+		position: absolute;
+		top: 245px;
+		right: 0px;
+	}
+}
+
