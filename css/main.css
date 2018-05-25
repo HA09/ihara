@@ -247,7 +247,7 @@ img.img_product
 
 .phone
 {
-	width: 295px;
+	width: 30%;
     float: left;
     margin:20px 25px 25px 10px;
 }
@@ -271,7 +271,7 @@ img.img_product
 
 .fax
 {
-	width: 295px;
+	width: 30%;
     float: left;
     margin:20px 0px 25px 0px;
 }
@@ -280,6 +280,12 @@ img.img_product
 {
 	float:right;
 	margin:20px 0px 25px 0px;
+	width:30%;
+}
+
+.btn_content_pc{
+	width:100%;
+	max-width:340px;
 }
 
 .spirits
@@ -309,8 +315,9 @@ img.img_product
 img.ihara_pc
 {
 	animation-name: example;
-	animation-duration: 4s;
-	width:100%;
+    animation-duration: 4s;
+    width: 100%;
+    max-width: 186px;
 }	
 
 img.ihara_sm , img.company_sm , img.banner_sm , img.logo_sm , img.btn_content_sm , img.btn_banner_sm
@@ -593,11 +600,12 @@ dl dd a:hover
 	img.btn_content_sm
 	{
 		display: block;
-		width: 80%;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		animation-name: example;
 		animation-duration: 4s;
+		max-width: 620px;
 	}
 	
 	div.text-kazunoko p 
@@ -627,7 +635,7 @@ dl dd a:hover
 	
 	div.phone , div.fax
 	{
-		width: 80%;
+		width: 65%;
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
@@ -653,7 +661,8 @@ dl dd a:hover
 	div.btn_order 
 	{
 		float: none;
-		margin: 20px 0px 25px 0px;
+		margin: 20px auto 25px auto;
+		width: 65%;
 	}
 	
 	div.img_spirits ul , div.img_company ul
@@ -669,7 +678,7 @@ dl dd a:hover
 	{
 		width: 32%;
 		display: inline-block;
-		margin-top: 1%;
+		margin-bottom: 2%;
 		margin-left: 0%;
 	}
 	
