@@ -715,6 +715,13 @@ dl dd a:hover
 		margin-left: 2%;
 	}
 	
+	dl dd a {
+		font-family: Hirakakupro;
+		font-size: 18.5px;
+		color: #000000;
+		line-height: 30px;
+	}
+	
 	.hide-pc{
 		display:none;	
 	}
