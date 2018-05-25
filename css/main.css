@@ -717,22 +717,22 @@ dl dd a:hover
 		float: left;
 	}
 	
-	p.text_pro_1 
+	.text_pro_1 
 	{
 		font-size: 21.3px;
 		line-height: 25px;
 		float: left;
 		width: 55%;
-		padding-bottom: 0% !important;
+		padding-bottom: 5% !important;
 	}
 	
-	p.text_pro_2 
+	.text_pro_2 
 	{
 		font-size: 18.5px;
 		width: 100%;
 	}
 	
-	p.img_pro 
+	.img_pro 
 	{
 		width: 40% !important;
 		margin-top: 0% !important;
