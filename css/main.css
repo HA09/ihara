@@ -187,7 +187,7 @@ a:hover img.btn_banner_pc
 .product 
 {
     width: 100%;
-    padding: 5% 0% 5% 0%;
+    padding: 5% 0% 0% 0%;
     float: left;
 }
 
@@ -723,13 +723,13 @@ dl dd a:hover
 		line-height: 25px;
 		float: left;
 		width: 55%;
-		padding-bottom: 5% !important;
 	}
 	
 	.text_pro_2 
 	{
 		font-size: 18.5px;
 		width: 100%;
+		margin-top:5%;
 	}
 	
 	.img_pro 
