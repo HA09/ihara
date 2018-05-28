@@ -234,7 +234,7 @@ img.img_product
 	animation-name: example;
     animation-duration: 4s;
     width: 100%;
-    max-width: 291px;
+    max-width: 300px;
 }
 
 .order
@@ -297,6 +297,7 @@ img.img_product
 {
 	width: 100%;
 	text-align:center;
+	float: left;
 }
 
 .img_spirits ul li
@@ -332,30 +333,33 @@ img.ihara_sm , img.company_sm , img.banner_sm , img.logo_sm , img.btn_content_sm
 .img_company ul li:first-child
 {
 	width: 49.5%;
-    margin-right: 0.1%;
-	display: inline-block;
+    display: inline-block;
+    float: left;
 }
 
 .img_company ul li:nth-child(2)
 {
 	width: 49.5%;
-	display: inline-block;
+    display: inline-block;
+    float: right;
 }
 
 li.pd_company
 {
-	width: 24.3%;
-	margin-right: 2px;
+	width: 24.32%;
+    margin-right: 0.9%;
     margin-top: 0.9%;
-	display: inline-block;
+    display: inline-block;
+    float: left;
 }
 
 .img_company ul li:nth-child(6)
 {
-	width: 24.3%;
-	margin-right: 0%;
+	width: 24.32%;
+    margin-right: 0%;
     margin-top: 0.9%;
-	display: inline-block;
+    display: inline-block;
+    float: right;
 }
 
 img.company_pc
@@ -528,7 +532,7 @@ dl dd a:hover
 		display: block;
 		max-width: 970px;
 		background: #ffffff;
-		width: 97%;
+		width: 95%;
 	}
 	
 	div.nav 
@@ -575,6 +579,8 @@ dl dd a:hover
 		display: block;
 		border-right: 2px solid #adadad;
 		padding-right: 10px;
+		font-size: calc(14px + (21 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1.3;
 	}
 	
 	div.nav ul li:last-child a 
@@ -589,7 +595,7 @@ dl dd a:hover
 	dl dt 
 	{
 		font-family: Hirakakupro;
-		font-size: 16px;
+		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
 		font-style: normal;
 		color: #999999;
 		padding: 5% 0px 1% 2%;
@@ -610,38 +616,88 @@ dl dd a:hover
 	div.text-kazunoko p 
 	{
 		padding: 0% 0% 5% 0%;
-		line-height: 23px;
-		font-size:18.5px;
+		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1.3;
 	}
 	
-	div.text-kazunoko p:last-child 
+	.text-kazunoko p:last-child 
 	{
 		padding: 0% 0% 5% 0%;
-		line-height: 23px;
-		font-size:18.5px;
+		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1.3;
 	}
 	
-	div.products , div.spirits , div.information , div.company
+	.products , .spirits , .information , .company
 	{
 		margin-top: 5%;
+		float:left;
 	}
 	
-	div.product 
+	.product_sp
 	{
 		width: 100%;
-		padding-top: 5%;
+		margin-top: 7%;
+		float:left;
 	}
 	
-	div.phone , div.fax
+	.product_sp a{
+		float: left;
+		width: 4%;
+	}
+	
+	.title_pro_sp{
+		width: 100%;
+		max-width: 22px;
+		border-top: 2px solid #adadad;
+		padding-top: 5px;
+		float: left;
+	}
+	
+	.text_pro_sp{
+		float: right;
+		width: 90%;
+	}
+	
+	.text_pro_1_sp{
+		width: 40%;
+		float: left;
+		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1.3;
+		padding-bottom: 3%;
+	}
+	
+	.img_pro_sp{
+		float: right;
+		width: 60%;
+	}
+	
+	.text_pro_2_sp{
+		float: left;
+		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1.3;
+		width: 100%;
+	}
+	
+	.phone h3, .fax h3 {
+		padding-bottom: 7px;
+		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.phone p, .fax p {
+		font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (750 - 320)));
+		padding-top: 7px;
+	}
+	
+	.phone , .fax
 	{
-		width: 65%;
+		width: 80%;
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 	}
 	
-	div.order 
+	.order 
 	{
 		width: 100%;
 		border-top: 4px double #151d1d;
@@ -657,14 +713,14 @@ dl dd a:hover
 		text-decoration: underline;
 	}
 	
-	div.btn_order 
+	.btn_order 
 	{
 		float: none;
 		margin: 20px auto 25px auto;
-		width: 65%;
+		width: 79%;
 	}
 	
-	div.img_spirits ul , div.img_company ul
+	.img_spirits ul , .img-company ul
 	{
 		width: 100%;
 		margin-left: auto;
@@ -673,7 +729,7 @@ dl dd a:hover
 		text-align: center;
 	}
 	
-	div.img_spirits ul li 
+	.img_spirits ul li 
 	{
 		width: 32%;
 		display: inline-block;
@@ -690,7 +746,11 @@ dl dd a:hover
 		margin-left: 1.5%;
 	}
 	
-	div.img_company ul li:nth-child(2n+7)
+	.img-company{
+		float:left;
+	}
+	
+	.img-company ul li:nth-child(2n+1)
 	{
 		width: 48%;
 		display: inline-block;
@@ -698,7 +758,7 @@ dl dd a:hover
 		margin-bottom: 10px;
 	}
 	
-	div.img_company ul li:nth-child(2n+8)
+	.img-company ul li:nth-child(2n+2)
 	{
 		width: 48%;
 		display: inline-block;
@@ -722,7 +782,7 @@ dl dd a:hover
 		font-size: 18px;
 		line-height: 25px;
 		float: left;
-		width: 60%;
+		width: 55%;
 	}
 	
 	.text_pro_2 
@@ -734,17 +794,61 @@ dl dd a:hover
 	
 	.img_pro 
 	{
-		width: 38% !important;
+		width: 45% !important;
 		margin-top: 0% !important;
 		float: right;
-		margin-left: 2%;
 	}
 	
 	dl dd a {
 		font-family: Hirakakupro;
-		font-size: 18.5px;
+		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1.5 !important;
 		color: #000000;
 		line-height: 30px;
+	}
+	
+	.img_product_sp
+	{
+		animation-name: example;
+		animation-duration: 4s;
+		width: 65%;
+		max-width: 384px;
+		float: right;
+	}
+	
+	.title_pro_sp {
+		width: 100%;
+		border-top: 2px solid #adadad;
+		padding-top: 5px;
+		float: left;
+		max-width: 29px;
+	}
+	
+	p.img_product_sp
+	{
+		animation-name: example;
+		animation-duration: 4s;
+		width: 65%;
+		max-width: 384px;
+		float: right;
+	}
+	
+	.nav_footer ul li a {
+		text-decoration: none;
+		color: #999999;
+		font-family: Hirakakupro;
+		font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.nav_footer ul li:nth-child(2n) a {
+		text-decoration: none;
+		color: #999999;
+		font-family: Hirakakupro;
+		font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.w-40{
+		width:40%;
 	}
 	
 	.hidden-pc{
