@@ -105,24 +105,18 @@ div.clear
 .nav ul li
 {
 	border-bottom: 2px solid #adadad;
-    padding: 13px 0px 13px 0px;
+    padding: 70% 0px 70% 0px;
 }
 
 .nav ul li:first-child
 {
 	border-bottom: 2px solid #adadad;
-    padding: 0px 0px 13px 0px;
+    padding: 0px 0px 70% 0px;
 }	
 
 .nav ul li:last-child
 {
-    padding: 13px 0px 0px 0px;
-	border-bottom: 2px solid #adadad;
-}
-
-.nav ul li:last-child
-{
-    padding: 13px 0px 0px 0px;
+    padding: 70% 0px 0px 0px;
 	border-bottom: 0px solid #adadad;
 }
 
@@ -162,32 +156,43 @@ a:hover img.btn_banner_pc
 	margin-top: -3px;
 }
 
-.text-kazunoko
+.select-kazunoko
 {
-	padding-top:8px;
+	padding-top:10px;
+}
+
+.text-kazunoko{
+	margin: -5px auto;
+    width: 770px;
 }
 
 .text-kazunoko p
 {
-	padding: 0px 100px 35px 100px;
-	line-height: 23px;
-}
-
-.text-kazunoko p:last-child
-{
-	padding:0px 100px 0px 100px;
-	line-height: 23px;
+	line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 28px;
 }
 
 .products
 {
-	margin-top:165px;
+	margin-top:166px;
 }
 
-.product 
+.list-of-products 
 {
     width: 100%;
-    padding: 5% 0% 0% 0%;
+    margin: 4.8% 0% 0% 0%;
+    float: left;
+}
+
+.product {
+    width: 100%;
+    margin: 0% 0% 8.6% 0%;
+    float: left;
+}
+
+.product a{
+	width: 2%;
     float: left;
 }
 
@@ -197,15 +202,16 @@ a:hover img.btn_banner_pc
 
 .title_pro 
 {
-    width: 16px;
+    max-width: 20px;
     border-top: 2px solid #adadad;
     padding-top: 5px;
 	float: left;
+	width:100%;
 }
 
 .text_pro
 {
-	width: 57%;
+	width: 54.3%;
     padding-left: 7%;
 	float: left;
 }
@@ -213,8 +219,8 @@ a:hover img.btn_banner_pc
 p.text_pro_1
 {
     font-size: 20px;
-    line-height: 25px;
-	padding-bottom:25px;
+    line-height: 26px;
+	margin-bottom: 18px;
 }
 
 p.text_pro_2
@@ -249,38 +255,46 @@ img.img_product
 {
 	width: 30%;
     float: left;
-    margin:20px 25px 25px 10px;
+    margin:25px 25px 25px 10px;
 }
 
 .phone h3 , .fax h3
 {
-	padding-bottom: 7px;
+	margin-bottom: 5px;
+	font-size: 16px;
 }
 
 .phone p , .fax p
 {
 	font-size:13px;
-	padding-top: 7px;
+	margin-top: 12px;
 }
 
 .phone span , .fax span
 {
 	font-size:24px;
+	font-weight: bold;
 }
 
+.btn_tel
+{
+	width: 10%;
+    max-width: 34px;
+    padding-right: 5px;
+}
 
 .fax
 {
 	width: 30%;
     float: left;
-    margin:20px 0px 25px 0px;
+    margin:25px 0px 25px 0px;
 }
 
 .btn_order
 {
 	float:right;
 	margin:20px 0px 25px 0px;
-	width:30%;
+	width:35%;
 }
 
 .btn_content_pc{
@@ -291,6 +305,11 @@ img.img_product
 .spirits
 {
 	margin-top: 150px;
+}
+
+.img_spirits{	
+	float: left;
+    margin-top: -3px;
 }
 
 .img_spirits ul , .img_company ul
@@ -328,6 +347,10 @@ img.ihara_sm , img.company_sm , img.banner_sm , img.logo_sm , img.btn_content_sm
 .company
 {
 	margin-top: 160px;
+}
+
+.img_company{
+	margin-top: -5px;
 }
 
 .img_company ul li:first-child
@@ -382,12 +405,12 @@ dl dt
     font-style: normal;
     color: #999999;
     float: left;
-    padding: 12px 45px 5px 5px;
+    padding: 12px 45px 20px 5px;
 }
 
 dl dd 
 {
-    padding: 12px 0px 5px 0px;
+    padding: 12px 0px 20px 0px;
     border-bottom: 1px dotted #7f7f7f;
     text-decoration: underline;
 }
@@ -397,6 +420,7 @@ dl dd a
 	font-family: Hirakakupro;
 	font-size: 16px;
 	color: #000000;
+	line-height: 26px;
 }
 
 dl dd a:hover
@@ -620,16 +644,9 @@ dl dd a:hover
 	
 	.text-kazunoko p 
 	{
-		padding: 0% 0% 5% 0%;
+		margin: 0% 0% 7% 0%;
 		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
 		line-height: 1.5;
-	}
-	
-	.text-kazunoko p:last-child 
-	{
-		padding: 0% 0% 5% 0%;
-		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
-		line-height: 1.3;
 	}
 	
 	.products , .spirits , .information 
@@ -645,7 +662,7 @@ dl dd a:hover
 	}
 	
 	.products{
-		margin-top: 0% !important;
+		margin-top: -2% !important;
 		float:left;
 		margin-bottom: 3%;
 	}
@@ -660,7 +677,7 @@ dl dd a:hover
 	.product_sp
 	{
 		width: 100%;
-		margin-top: 7%;
+		margin-top: 10%;
 		float:left;
 	}
 	
@@ -687,7 +704,7 @@ dl dd a:hover
 		float: left;
 		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
 		line-height: 1.5;
-		padding-bottom: 5%;
+		margin-bottom: 5%;
 	}
 	
 	.img_pro_sp{
@@ -738,7 +755,7 @@ dl dd a:hover
 		border-bottom: 1px solid #b8bbbb;
 		height: 10%;
 		margin-top: 10px;
-		padding-top: 3%;
+		padding-top: 4%;
 	}
 	
 	dl dd 
@@ -928,8 +945,12 @@ dl dd a:hover
 		text-decoration: underline;
 	}
 	
+	.select-kazunoko {
+		margin-top: 10%;
+	}
+	
 	.text-kazunoko {
-		padding-top: 18px;
+		margin: 9% auto;
 	}
 	
 	.w-40{
