@@ -691,14 +691,6 @@ dl dd a:hover
 		width: 4%;
 	}
 	
-	.title_pro_sp{
-		width: 100%;
-		max-width: 22px;
-		border-top: 2px solid #adadad;
-		padding-top: 5px;
-		float: left;
-	}
-	
 	.text_pro_sp{
 		float: right;
 		width: 88%;
