@@ -691,6 +691,11 @@ dl dd a:hover
 		width: 4%;
 	}
 	
+	.product_sp_1 a {
+		float: left;
+		width: 4%;
+	}
+	
 	.text_pro_sp{
 		float: right;
 		width: 88%;
