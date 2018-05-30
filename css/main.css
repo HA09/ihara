@@ -667,7 +667,7 @@ dl dd a:hover
 	}
 	
 	.products{
-		margin-top: -2% !important;
+		margin-top: -4% !important;
 		float:left;
 		margin-bottom: 3%;
 	}
@@ -705,7 +705,7 @@ dl dd a:hover
 		width: 40%;
 		float: left;
 		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
-		line-height: 1.5;
+		line-height: 1.2;
 		margin-bottom: 5%;
 	}
 	
@@ -885,7 +885,7 @@ dl dd a:hover
 	{
 		animation-name: example;
 		animation-duration: 4s;
-		width: 65%;
+		width: 70%;
 		max-width: 384px;
 		float: right;
 	}
@@ -952,12 +952,16 @@ dl dd a:hover
 	}
 	
 	.text-kazunoko {
-		margin: 9% auto;
+		margin: 8% auto;
 		width:100%;
 	}
 	
 	.w-40{
 		width:40%;
+	}
+	
+	.w-35{
+		width:35%;
 	}
 	
 	.hidden-pc{
