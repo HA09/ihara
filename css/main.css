@@ -133,7 +133,7 @@ div.clear
 	color:#db0300;
 }
 
-img.banner_pc
+.w-100
 {
 	width:100%;
 }	
@@ -181,18 +181,18 @@ a:hover img.btn_banner_pc
 .list-of-products 
 {
     width: 100%;
-    margin: 4.8% 0% 0% 0%;
+    margin: 4.8% 0% 0.5% 0%;
     float: left;
 }
 
 .product {
     width: 100%;
-    margin: 0% 0% 8.6% 0%;
+    margin: 0% 0% 4.5% 0%;
     float: left;
 }
 
 .product a{
-	width: 2%;
+	width: 3%;
     float: left;
 }
 
@@ -202,7 +202,7 @@ a:hover img.btn_banner_pc
 
 .title_pro 
 {
-    max-width: 20px;
+    max-width: 21px;
     border-top: 2px solid #adadad;
     padding-top: 5px;
 	float: left;
@@ -231,7 +231,7 @@ p.text_pro_2
 p.img_pro
 {
 	float: right;
-    width: 30%;
+    width: 33%;
     margin-top: -5%; 
 }
 
@@ -240,15 +240,15 @@ img.img_product
 	animation-name: example;
     animation-duration: 4s;
     width: 100%;
-    max-width: 300px;
 }
 
 .order
 {
-	width:100%;
-	border-top:4px double #151d1d;
-	border-bottom:1px solid #b8bbbb;
-	height: 125px;
+	width: 100%;
+    border-bottom: 1px solid #b8bbbb;
+    height: 125px;
+    border-color: #b8bbbb;
+    border-top: double #b8bbbb;
 }
 
 .phone
@@ -297,6 +297,10 @@ img.img_product
 	width:35%;
 }
 
+.btn_order a:hover{
+	opacity:0.5;
+}
+
 .btn_content_pc{
 	width:100%;
 	max-width:340px;
@@ -339,7 +343,7 @@ img.ihara_pc
     width: 100%;
 }	
 
-img.ihara_sm , img.company_sm , img.banner_sm , img.logo_sm , img.btn_content_sm , img.btn_banner_sm
+img.ihara_sm , img.company_sm , img.logo_sm , img.btn_content_sm , img.btn_banner_sm
 {
 	display:none;
 }	
@@ -411,16 +415,17 @@ dl dt
 dl dd 
 {
     padding: 12px 0px 20px 0px;
-    border-bottom: 1px dotted #7f7f7f;
-    text-decoration: underline;
+    border-bottom: 1px dotted #b8bbbb;
 }
 
 dl dd a
 {
 	font-family: Hirakakupro;
-	font-size: 16px;
-	color: #000000;
-	line-height: 26px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 26px;
+    text-decoration: none;
+    border-bottom: 1px solid #b8bbbb;
 }
 
 dl dd a:hover
@@ -517,7 +522,7 @@ dl dd a:hover
 
 @media only screen and (max-width: 750px) 
 {
-	img.banner_pc , img.logo_pc , img.btn_banner_pc , img.company_pc  , img.btn_content_pc
+	img.logo_pc , img.btn_banner_pc , img.company_pc  , img.btn_content_pc
 	{
 		display:none;
 	}
@@ -750,19 +755,19 @@ dl dd a:hover
 	
 	.order 
 	{
-		width: 100%;
-		border-top: 4px double #151d1d;
-		border-bottom: 1px solid #b8bbbb;
 		height: 10%;
 		margin-top: 10px;
 		padding-top: 4%;
+		width: 100%;
+		border-bottom: 1px solid #b8bbbb;
+		border-color: #b8bbbb;
+		border-top: double #b8bbbb;
 	}
 	
 	dl dd 
 	{
 		padding: 0% 2% 5% 2%;
 		border-bottom: 1px dotted #7f7f7f;
-		text-decoration: underline;
 	}
 	
 	.btn_order 
@@ -778,12 +783,11 @@ dl dd a:hover
 	}
 	
 	.img_spirits_r2{
-		text-align:left !important;
+		text-align: left !important;
 		width: 100%;
-		margin-left: auto;
 		margin-right: auto;
 		display: block;
-		padding-left: 17px;
+		margin-left: 2.4%;
 	}
 	
 	.img_spirits_r1 , .img-company ul
@@ -876,6 +880,8 @@ dl dd a:hover
 		line-height: 1.5 !important;
 		color: #000000;
 		line-height: 30px;
+		text-decoration: none;
+		border-bottom: 1px solid #b8bbbb;
 	}
 	
 	.img_product_sp
@@ -942,7 +948,6 @@ dl dd a:hover
 	dl dd:last-child {
 		padding: 0% 2% 5% 2%;
 		border-bottom: 0px !important;
-		text-decoration: underline;
 	}
 	
 	.select-kazunoko {
@@ -951,6 +956,7 @@ dl dd a:hover
 	
 	.text-kazunoko {
 		margin: 9% auto;
+		width:100%;
 	}
 	
 	.w-40{
