@@ -46,7 +46,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
+	line-height: 1.5;
 	position: relative;
 	font-family: HarenosoraMincho;
 	color: #000000;
@@ -85,8 +85,17 @@ div.inner
 	width:100%;
 }
 
-.hidden-sp{
+.show-sp{
 	display:none;
+}
+
+.clear-fix{
+	clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
 }
 
 .w-100
@@ -133,6 +142,7 @@ div.inner
 	color:#000000;
 	display: block;
     padding: 13px 0px 13px 0px;
+	line-height:1.2;
 }
 
 .navi ul li:first-child a
@@ -141,6 +151,7 @@ div.inner
 	color:#000000;
 	display: block;
     padding: 0px 0px 13px 0px;
+	line-height:1.2;
 }
 
 .navi ul li a:hover
@@ -150,14 +161,14 @@ div.inner
 	color:#db0300;
 }
 
-img.btn_banner_pc
+img.btn-banner-pc
 {
 	position: fixed;
     top: 245px;
     right: 0px;
 }
 
-a:hover img.btn_banner_pc
+a:hover img.btn-banner-pc
 {
 	opacity: 0.7;
 }
@@ -175,21 +186,17 @@ a:hover img.btn_banner_pc
 }
 
 .text-kazunoko{
-	margin: 52px auto;
+	margin: 52px auto 0px auto;
     width: 770px;
 }
 
 .text-kazunoko p
 {
-	line-height: 26px;
-    font-size: 16px;
     margin-bottom: 35px;
 }
 
 .text-kazunoko p:last-child
 {
-	line-height: 26px;
-    font-size: 16px;
     margin-bottom: 0px;
 }
 
@@ -210,13 +217,13 @@ a:hover img.btn_banner_pc
 .list-of-products 
 {
     width: 100%;
-    margin: 25px 0px 0px 0px;
+    margin-top: 25px;
 }
 
 .product {
     width: 100%;
-    margin: 0px 0px 30px 0px;
-	overflow: auto;
+    margin-bottom: 30px;
+	float:left;
 }
 
 .product a{
@@ -224,7 +231,7 @@ a:hover img.btn_banner_pc
 	float:left;
 }
 
-.title_pro:hover{
+.title-pro:hover{
 	opacity:0.5;
 }
 
@@ -244,19 +251,12 @@ a:hover img.btn_banner_pc
 p.text-pro-1
 {
     font-size: 20px;
-    line-height: 26px;
 	margin-bottom: 30px;
-}
-
-p.text-pro-2
-{
-	font-size:16px;
-	line-height: 26px;
 }
 
 p.reg-product
 {
-    width: 33%;
+    width: 28%;
 	float:right;
 }
 
@@ -307,7 +307,7 @@ img.product-image
 	font-weight: bold;
 }
 
-.btn_tel
+.btn-tel
 {
 	width: 10%;
     max-width: 34px;
@@ -318,21 +318,21 @@ img.product-image
 {
 	width: 30%;
     float: left;
-    margin:25px 0px 25px 0px;
+    margin:25px 0px;
 }
 
-.btn_order
+.btn-order
 {
 	float:right;
 	margin:20px 0px 25px 0px;
 	width:35%;
 }
 
-.btn_order a:hover{
+.btn-order a:hover{
 	opacity:0.5;
 }
 
-.btn_content_pc{
+.btn-content-pc{
 	width:100%;
 	max-width:340px;
 }
@@ -342,32 +342,32 @@ img.product-image
 	margin-bottom:153px;
 }
 
-.img_spirits{	
+.img-spirits{	
 	margin-top:50px;
 	overflow: auto;
 }
 
-.img_spirits ul 
+.img-spirits ul 
 {
 	width: 100%;
 	text-align:center;
 	float: left;
 }
 
-.img_spirits ul li
+.img-spirits ul li
 {
 	width: 19%;
     display: inline-block;
 	margin-left:0.2%;
 }
 
-.img_spirits ul li:first-child 
+.img-spirits ul li:first-child 
 {
 	margin-left:0%;
 	margin-bottom: 7px;
 }
 
-img.ihara_pc
+img.ihara-pc
 {
 	animation-name: example;
     animation-duration: 4s;
@@ -379,36 +379,36 @@ img.ihara_pc
 	margin-bottom:150px;
 }
 
-.img_company{
+.img-company{
 	margin-top: 52px;
 }
 
-.img_company ul
+.img-r1 , .img-r2
 {
 	width: 100%;
 	text-align:center;
 }
 
-.img_company ul li:first-child
+.img-r1 li:first-child
 {
 	width: 49%;
     display: inline-block;
 }
 
-.img_company ul li:nth-child(2)
+.img-r1 li:nth-child(2)
 {
 	width: 49%;
     display: inline-block;
 }
 
-li.pd_company
+.img-r2 li
 {
 	width: 24.1%;
-    margin-top: 0.8%;
+    margin-top: 0.4%;
     display: inline-block;
 }
 
-img.company_pc
+.company-pc
 {
 	animation-name: example;
 	animation-duration: 4s;
@@ -421,18 +421,17 @@ img.company_pc
 	margin-bottom:160px;
 }
 
-.text_information{
+.text-information{
 	margin-top:60px;
 }
 
 dl dt 
 {
     font-family: Hirakakupro;
-    font-size: 16px;
     font-style: normal;
     color: #999999;
     float: left;
-    padding: 12px 45px 20px 5px;
+    padding: 16px 45px 20px 5px;
 }
 
 dl dd 
@@ -444,9 +443,7 @@ dl dd
 dl dd a
 {
 	font-family: Hirakakupro;
-    font-size: 16px;
     color: #000000;
-    line-height: 26px;
     text-decoration: none;
     border-bottom: 1px solid #b8bbbb;
 }
@@ -529,10 +526,6 @@ dl dd a:hover
 
 @media only screen and (max-width: 750px) 
 {
-	img.company_pc
-	{
-		display:none;
-	}
 	
 	@keyframes example 
 	{
@@ -540,12 +533,95 @@ dl dd a:hover
 		100% {transform: scale(1.0);}
 	}
 	
-	.hidden-pc{
+	.show-pc{
 		display:none;	
 	}
 	
 	.show-sp{
 		display:block;
+	}
+	
+	div.inner {
+		margin: 0 auto;
+		height: auto;
+		display: block;
+		max-width: 970px;
+		background: #ffffff;
+		width: 96%;
+	}
+	
+	.navi 
+	{
+		width: 95%;
+		position: absolute;
+		top: 0.2%;
+		left: 2%;
+	}
+	
+	.navi ul 
+	{
+		width: 90%;
+		padding: 2% 0% 0% 1%;
+	}
+	
+	.navi ul li
+	{
+		display: inline-block;
+		border-bottom: 0px;
+		border-right: 0px;
+	}
+
+	.navi ul li a , .navi ul li:first-child a 
+	{
+		border-right: 2px solid #adadad;
+		font-size: 14px;
+		line-height: 1.3;
+		font-weight:bold;
+		padding: 0px 7px 0px 0px;
+	}
+	
+	.navi ul li:last-child a 
+	{
+		border-right: 0px;
+		display:block;
+		padding: 0px;
+	}
+	
+	img.logo-sp
+	{
+		display: inline-block;
+		width: 50%;
+		max-width: 280px;
+		margin-left: 1%;
+	}
+	
+	img.btn-banner-sp
+	{
+		position: absolute;
+		display: block;
+		right: 1%;
+		top: 0%;
+		width: 45%;
+		max-width: 200px;
+	}
+	
+	/*kazunoko*/
+	.about-us-kazunoko {
+		padding-top: 5.5%;
+	}
+	
+	.title {
+		margin: 0 auto;
+		width: 50%;
+	}
+	
+	.text-kazunoko {
+		margin: 6% auto 0% auto;
+		width: 100%;
+	}
+	
+	.text-kazunoko p {
+		margin-bottom: 75px;
 	}
 	
 }
