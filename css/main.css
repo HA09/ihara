@@ -28,6 +28,23 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+@font-face 
+{
+  font-family: HarenosoraMincho;
+  src: url(‘../fonts/Harenosora.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face 
+{
+  font-family: Hirakakupro;
+  src: url(‘../fonts/hirakakupro-w3.otf’) format(‘opentype’);
+  font-weight: normal;
+  font-style: normal; 
+}
+
 body {
 	line-height: 1;
 	position: relative;
@@ -52,20 +69,10 @@ table {
 	border-spacing: 0;
 }
 
-@font-face 
+@keyframes example 
 {
-  font-family: HarenosoraMincho;
-  src: url(‘../fonts/Harenosora.otf’) format(‘opentype’);
-  font-weight: normal;
-  font-style: normal; 
-}
-
-@font-face 
-{
-  font-family: Hirakakupro;
-  src: url(‘../fonts/hirakakupro-w3.otf’) format(‘opentype’);
-  font-weight: normal;
-  font-style: normal; 
+	0%   {transform: scale(.2);}
+	100% {transform: scale(1.0);}
 }
 
 div.inner
@@ -75,68 +82,73 @@ div.inner
     display: block;
     max-width: 970px;
 	background:#ffffff;
+	width:100%;
 }
 
-div.clear
-{
-	clear: both;
-}
-
-@keyframes example 
-{
-	0%   {transform: scale(.2);}
-	100% {transform: scale(1.0);}
-}
-
-.nav
-{
-	width: 30px;
-    position: fixed;
-    top: 25px;
-    left: 38px;
-}	
-
-.nav ul
-{
-	padding:10px 0px 0px 5px;
-	width: 15px;
-}
-
-.nav ul li
-{
-	border-bottom: 2px solid #adadad;
-    padding: 70% 0px 70% 0px;
-}
-
-.nav ul li:first-child
-{
-	border-bottom: 2px solid #adadad;
-    padding: 0px 0px 70% 0px;
-}	
-
-.nav ul li:last-child
-{
-    padding: 70% 0px 0px 0px;
-	border-bottom: 0px solid #adadad;
-}
-
-.nav ul li a
-{
-	text-decoration:none;
-	color:#000000;
-}
-
-.nav ul li a:hover
-{
-
-	text-decoration:none;
-	color:#db0300;
+.hidden-sp{
+	display:none;
 }
 
 .w-100
 {
 	width:100%;
+}
+
+.mg-auto{
+	margin:0px auto;
+}
+
+.dis-block{
+	display:block;
+}
+
+/*header*/
+.navi
+{
+	width: 30px;
+    position: fixed;
+    top: 27px;
+    left: 35px;
 }	
+
+.navi ul
+{
+	margin: 10px 0px 0px 5px;
+	width: 15px;
+}
+
+.navi ul li
+{
+	border-bottom: 2px solid #adadad;
+}	
+
+.navi ul li:last-child
+{
+	border-bottom: 0px solid #adadad;
+}
+
+.navi ul li a
+{
+	text-decoration:none;
+	color:#000000;
+	display: block;
+    padding: 13px 0px 13px 0px;
+}
+
+.navi ul li:first-child a
+{
+	text-decoration:none;
+	color:#000000;
+	display: block;
+    padding: 0px 0px 13px 0px;
+}
+
+.navi ul li a:hover
+{
+
+	text-decoration:none;
+	color:#db0300;
+}
 
 img.btn_banner_pc
 {
@@ -148,21 +160,22 @@ img.btn_banner_pc
 a:hover img.btn_banner_pc
 {
 	opacity: 0.7;
-}	
+}
 
+/*kazunoko*/
 .kazunoko
 {
 	background:#fcfbfb;
-	margin-top: -3px;
+	margin-bottom:106px;
 }
 
-.select-kazunoko
+.about-us-kazunoko
 {
-	padding-top:10px;
+	padding-top:60px;
 }
 
 .text-kazunoko{
-	margin: -5px auto;
+	margin: 52px auto;
     width: 770px;
 }
 
@@ -170,76 +183,94 @@ a:hover img.btn_banner_pc
 {
 	line-height: 26px;
     font-size: 16px;
-    margin-bottom: 28px;
+    margin-bottom: 35px;
+}
+
+.text-kazunoko p:last-child
+{
+	line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+/*products*/
+.mt-9{
+	margin-top:9%;
 }
 
 .products
 {
-	margin-top:166px;
+	margin-bottom:80px;
+}
+
+.product-content{
+	width:100%;
 }
 
 .list-of-products 
 {
     width: 100%;
-    margin: 4.8% 0% 0.5% 0%;
-    float: left;
+    margin: 25px 0px 0px 0px;
 }
 
 .product {
     width: 100%;
-    margin: 0% 0% 4.5% 0%;
-    float: left;
+    margin: 0px 0px 30px 0px;
+	overflow: auto;
 }
 
 .product a{
-	width: 3%;
-    float: left;
+	width: 2.3%;
+	float:left;
 }
 
 .title_pro:hover{
 	opacity:0.5;
 }
 
-.title_pro 
+.title-pro 
 {
-    max-width: 21px;
     border-top: 2px solid #adadad;
     padding-top: 5px;
-	float: left;
-	width:100%;
 }
 
-.text_pro
+.text-pro
 {
-	width: 54.3%;
-    padding-left: 7%;
-	float: left;
+	width: 54%;
+    margin-left: 7.7%;
+	float:left;
 }
 
-p.text_pro_1
+p.text-pro-1
 {
     font-size: 20px;
     line-height: 26px;
-	margin-bottom: 18px;
+	margin-bottom: 30px;
 }
 
-p.text_pro_2
+p.text-pro-2
 {
 	font-size:16px;
+	line-height: 26px;
 }
 
-p.img_pro
+p.reg-product
 {
-	float: right;
     width: 33%;
-    margin-top: -5%; 
+	float:right;
 }
 
-img.img_product
+img.product-image
 {
 	animation-name: example;
     animation-duration: 4s;
     width: 100%;
+	float: right;
+}
+
+/*order*/
+.reg-order{
+	margin-bottom:150px;
 }
 
 .order
@@ -306,17 +337,17 @@ img.img_product
 	max-width:340px;
 }
 
-.spirits
-{
-	margin-top: 150px;
+/*spirits*/
+.reg-spirits{
+	margin-bottom:153px;
 }
 
 .img_spirits{	
-	float: left;
-    margin-top: -3px;
+	margin-top:50px;
+	overflow: auto;
 }
 
-.img_spirits ul , .img_company ul
+.img_spirits ul 
 {
 	width: 100%;
 	text-align:center;
@@ -343,50 +374,38 @@ img.ihara_pc
     width: 100%;
 }	
 
-img.ihara_sm , img.company_sm , img.logo_sm , img.btn_content_sm , img.btn_banner_sm
-{
-	display:none;
-}	
-
-.company
-{
-	margin-top: 160px;
+/*company*/	
+.reg-company{
+	margin-bottom:150px;
 }
 
 .img_company{
-	margin-top: -5px;
+	margin-top: 52px;
+}
+
+.img_company ul
+{
+	width: 100%;
+	text-align:center;
 }
 
 .img_company ul li:first-child
 {
-	width: 49.5%;
+	width: 49%;
     display: inline-block;
-    float: left;
 }
 
 .img_company ul li:nth-child(2)
 {
-	width: 49.5%;
+	width: 49%;
     display: inline-block;
-    float: right;
 }
 
 li.pd_company
 {
-	width: 24.32%;
-    margin-right: 0.9%;
-    margin-top: 0.9%;
+	width: 24.1%;
+    margin-top: 0.8%;
     display: inline-block;
-    float: left;
-}
-
-.img_company ul li:nth-child(6)
-{
-	width: 24.32%;
-    margin-right: 0%;
-    margin-top: 0.9%;
-    display: inline-block;
-    float: right;
 }
 
 img.company_pc
@@ -397,9 +416,13 @@ img.company_pc
     max-width: 480px;
 }
 
-.information
-{
-	margin-top: 150px;
+/*information*/
+.reg-information{
+	margin-bottom:160px;
+}
+
+.text_information{
+	margin-top:60px;
 }
 
 dl dt 
@@ -435,24 +458,20 @@ dl dd a:hover
 	color:#dd0300;
 }
 
-.footer
-{
-	margin-top:155px;
-}
-
-.nav_footer
+/*footer*/
+.nav-footer
 {
 	width:100%;
 	margin-bottom: 20px;
 	text-align: center;
 }
 
-.nav_footer ul li
+.nav-footer ul li
 {
 	display: inline-block;
 }
 
-.nav_footer ul li a
+.nav-footer ul li a
 {
 	text-decoration: none;
 	color:#999999;
@@ -460,7 +479,7 @@ dl dd a:hover
 	font-size:13px;
 }
 
-.nav_footer ul li a:hover
+.nav-footer ul li a:hover
 {
 	text-decoration: none;
 	color:#dd0300;
@@ -468,7 +487,7 @@ dl dd a:hover
 	font-size:13px;
 }
 
-.nav_footer ul li:nth-child(2n)
+.nav-footer ul li:nth-child(2n)
 {
 	display: inline-block;
 	border-right: 1px solid #999999;
@@ -476,7 +495,7 @@ dl dd a:hover
 	border-left: 1px solid #999999;
 }
 
-.nav_footer ul li:nth-child(2n) a
+.nav-footer ul li:nth-child(2n) a
 {
 	text-decoration: none;
 	color:#999999;
@@ -484,7 +503,7 @@ dl dd a:hover
 	font-size:13px;
 }
 
-.nav_footer ul li:nth-child(2n) a:hover
+.nav-footer ul li:nth-child(2n) a:hover
 {
 	text-decoration: none;
 	color:#dd0300;
@@ -504,25 +523,13 @@ dl dd a:hover
 	padding:20px;
 }
 
-.mg-50-auto{
-	margin:50px auto;
-}
 
-.mg-30-auto{
-	margin:30px auto;
-}
-
-.disblock{
-	display:block;
-}
-
-.hidden-sp{
-	display:none;
-}
+/*---------------------------------------*/
+/*sp*/
 
 @media only screen and (max-width: 750px) 
 {
-	img.logo_pc , img.btn_banner_pc , img.company_pc  , img.btn_content_pc
+	img.company_pc
 	{
 		display:none;
 	}
@@ -531,437 +538,6 @@ dl dd a:hover
 	{
 		0%   {transform: scale(.2);}
 		100% {transform: scale(1.0);}
-	}
-	
-	img.logo_sm
-	{
-		display: inline-block;
-		width: 50%;
-		max-width: 280px;
-		margin-left: 1%;
-	}
-
-	img.banner_sm
-	{		
-		width:100%;
-		display:block;
-		padding-top: 25px;
-	}
-	
-	img.btn_banner_sm
-	{
-		position: absolute;
-		display: block;
-		right: 1%;
-		top: 0%;
-		width: 45%;
-		max-width: 200px;
-	}
-	
-	.inner
-	{
-		margin: 0 auto;
-		height: auto;
-		display: block;
-		max-width: 970px;
-		background: #ffffff;
-		width: 95%;
-	}
-	
-	.nav 
-	{
-		width: 95%;
-		position: absolute;
-		top: 0.2%;
-		left: 2%;
-	}
-	
-	.nav ul 
-	{
-		width: 90%;
-		padding: 2% 0% 0% 1%;
-	}
-	
-	.nav ul li
-	{
-		display: inline-block;
-		border-bottom: 0px;
-		padding: 0% 1% 3% 0%;
-		border-right: 0px;
-	}
-	
-	.nav ul li:first-child
-	{
-		display: inline-block;
-		border-right: 0px;
-		border-bottom: 0px;
-		padding: 0% 1% 3% 0%;
-	}
-	
-	.nav ul li:last-child 
-	{
-		padding: 0% 0% 0% 0%;
-		border-bottom: 0px;
-		border-right: 0px;
-	}
-	
-	.nav ul li a 
-	{
-		text-decoration: none;
-		color: #000000;
-		display: block;
-		border-right: 2px solid #adadad;
-		padding-right: 10px;
-		font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (750 - 320)));
-		line-height: 1.3;
-		font-weight:bold;
-	}
-	
-	.nav ul li:last-child a 
-	{
-		text-decoration: none;
-		color: #000000;
-		display: block;
-		border-right: 0px;
-		padding-right: 10px;
-	}
-	
-	dl dt 
-	{
-		font-family: Hirakakupro;
-		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
-		font-style: normal;
-		color: #999999;
-		padding: 7% 0px 1% 2%;
-		float: none;
-	}
-	
-	img.btn_content_sm
-	{
-		display: block;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		animation-name: example;
-		animation-duration: 4s;
-		max-width: 620px;
-	}
-	
-	.text-kazunoko p 
-	{
-		margin: 0% 0% 7% 0%;
-		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
-		line-height: 1.5;
-	}
-	
-	.products , .spirits , .information 
-	{
-		margin-top: 5%;
-		float:left;
-	}
-	
-	.company
-	{
-		margin-top: 3%;
-		float:left;
-	}
-	
-	.products{
-		margin-top: -4% !important;
-		float:left;
-		margin-bottom: 3%;
-	}
-	
-	.product_sp_1
-	{
-		width: 100%;
-		margin-top: 3%;
-		float:left;
-	}
-	
-	.product_sp
-	{
-		width: 100%;
-		margin-top: 10%;
-		float:left;
-	}
-	
-	.product_sp a{
-		float: left;
-		width: 4%;
-	}
-	
-	.product_sp_1 a {
-		float: left;
-		width: 4%;
-	}
-	
-	.text_pro_sp{
-		float: right;
-		width: 88%;
-	}
-	
-	.text_pro_1_sp{
-		width: 40%;
-		float: left;
-		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
-		line-height: 1.2;
-		margin-bottom: 5%;
-	}
-	
-	.img_pro_sp{
-		float: right;
-		width: 60%;
-	}
-	
-	.text_pro_2_sp{
-		float: left;
-		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
-		line-height: 1.5;
-		width: 100%;
-	}
-	
-	.phone h3, .fax h3 {
-		padding-bottom: 3%;
-		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
-	}
-	
-	.phone p, .fax p {
-		font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (750 - 320)));
-		padding-top: 2%;
-	}
-	
-	.phone 
-	{
-		width: 80%;
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	
-	.fax
-	{
-		width: 80%;
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		padding-top:5%;
-	}
-	
-	.order 
-	{
-		height: 10%;
-		margin-top: 10px;
-		padding-top: 4%;
-		width: 100%;
-		border-bottom: 1px solid #b8bbbb;
-		border-color: #b8bbbb;
-		border-top: double #b8bbbb;
-	}
-	
-	dl dd 
-	{
-		padding: 0% 2% 5% 2%;
-		border-bottom: 1px dotted #7f7f7f;
-	}
-	
-	.btn_order 
-	{
-		float: none;
-		margin: 10% auto 8% auto;
-		width: 79%;
-	}
-	
-	.img_spirits{
-		float: left;
-		margin-top: 3%;
-	}
-	
-	.img_spirits_r2{
-		text-align: left !important;
-		width: 100%;
-		margin-right: auto;
-		display: block;
-		margin-left: 2.4%;
-	}
-	
-	.img_spirits_r1 , .img-company ul
-	{
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		text-align: center;
-	}
-	
-	.img_spirits ul li 
-	{
-		width: 31%;
-		display: inline-block;
-		margin-bottom: 1%;
-		margin-left: 0%;
-	}
-	
-	p.title_pro 
-	{
-		width: 16px;
-		border-top: 2px solid #adadad;
-		padding-top: 5px;
-		float: left;
-		margin-left: 1.5%;
-	}
-	
-	.img-company{
-		float:left;
-		margin-top: 2%;
-	}
-	
-	.text_information{
-		margin-top: -2%;
-	}
-	
-	.img-company ul li:nth-child(2n+1)
-	{
-		width: 48%;
-		display: inline-block;
-		margin-right: 0.6%;
-		margin-bottom: 10px;
-	}
-	
-	.img-company ul li:nth-child(2n+2)
-	{
-		width: 48%;
-		display: inline-block;
-		margin-bottom: 10px;
-	}
-	
-	img.company_sm
-	{
-		display:block;
-		width: 100%;
-	}
-	
-	.text_pro {
-		width: 85% !important;
-		padding-left: 7%;
-		float: left;
-	}
-	
-	.text_pro_1 
-	{
-		font-size: 18px;
-		line-height: 25px;
-		float: left;
-		width: 55%;
-	}
-	
-	.text_pro_2 
-	{
-		font-size: 16px;
-		width: 100%;
-		margin-top:5%;
-	}
-	
-	.img_pro 
-	{
-		width: 45% !important;
-		margin-top: 0% !important;
-		float: right;
-	}
-	
-	dl dd a {
-		font-family: Hirakakupro;
-		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
-		line-height: 1.5 !important;
-		color: #000000;
-		line-height: 30px;
-		text-decoration: none;
-		border-bottom: 1px solid #b8bbbb;
-	}
-	
-	.img_product_sp
-	{
-		animation-name: example;
-		animation-duration: 4s;
-		width: 70%;
-		max-width: 384px;
-		float: right;
-	}
-	
-	.title_pro_sp {
-		width: 100%;
-		border-top: 2px solid #adadad;
-		padding-top: 5px;
-		float: left;
-		max-width: 29px;
-	}
-	
-	p.img_product_sp
-	{
-		animation-name: example;
-		animation-duration: 4s;
-		width: 65%;
-		max-width: 384px;
-		float: right;
-	}
-	
-	.nav_footer ul li a {
-		text-decoration: none;
-		color: #999999;
-		font-family: Hirakakupro;
-		font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (750 - 320)));
-	}
-	
-	.nav_footer ul li:nth-child(2n) a {
-		text-decoration: none;
-		color: #999999;
-		font-family: Hirakakupro;
-		font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (750 - 320)));
-	}
-	
-	.nav_footer {
-		width: 100%;
-		margin-bottom: 25px;
-		text-align: center;
-	}
-	
-	.copyright {
-		background: #000000;
-		text-align: center;
-		font-family: Hirakakupro;
-		font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (750 - 320)));
-		font-style: normal;
-		color: #ffffff;
-		text-align: center;
-		padding: 30px;
-	}
-	
-	.footer {
-		margin-top: 80px;
-	}
-	
-	dl dd:last-child {
-		padding: 0% 2% 5% 2%;
-		border-bottom: 0px !important;
-	}
-	
-	.select-kazunoko {
-		margin-top: 10%;
-	}
-	
-	.text-kazunoko {
-		margin: 8% auto;
-		width:100%;
-	}
-	
-	.w-40{
-		width:40%;
-	}
-	
-	.w-35{
-		width:35%;
 	}
 	
 	.hidden-pc{
@@ -973,43 +549,3 @@ dl dd a:hover
 	}
 	
 }
-
-@media only screen and (min-width: 751px) and (max-width:1130px) 
-{
-
-	body 
-	{
-		line-height: 1;
-		position: relative;
-		font-family: HarenosoraMincho;
-		color: #000000;
-		font-size: 13px;
-		background: #ffffff;
-	}
-	
-	div.nav 
-	{
-		width: 30px;
-		top: 25px;
-		left: 38px;
-		position: absolute;
-	}
-	
-	img.btn_banner_pc 
-	{
-		position: absolute;
-		top: 245px;
-		right: 0px;
-	}
-	
-	div.inner
-	{
-		margin: 0 auto;
-		height: auto;
-		display: block;
-		max-width: 970px;
-		background: #ffffff;
-		width: 97%;
-	}
-}
-

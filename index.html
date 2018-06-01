@@ -16,21 +16,24 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
   </head>
   <body>
-		<div class="header">
+	<div id="container">
+		<header id="header"><!--start header-->
 			<img src="images/banner.jpg" class="w-100 hidden-pc">
 			<img src="images/banner_sm.jpg" class="w-100 show-sp hidden-sp">
-			<div class="nav hidden-pc">
-				<img src="images/logo_pc.png" alt="" class="logo_pc">
+			
+			<nav class="navi hidden-pc"><!--start navigation-->
+				<img src="images/logo_pc.png" alt="" class="hidden-pc">
 				<ul>
 					<li><a href="#">井原スピリッツ</a></li>
 					<li><a href="#">井原水産について</a></li>
 					<li><a href="#">お知らせ</a></li> 
 					<li><a href="#">お問い合わせ</a></li>
 				</ul>
-			</div>
+			</nav><!--end navigation-->
+			
 			<!--menu sp-->
-			<div class="nav show-sp hidden-sp">
-				<img src="images/logo_sp.jpg" alt="" class="logo_sm">
+			<div class="navi show-sp hidden-sp">
+				<img src="images/logo_sp.jpg" alt="" class="show-sp hidden-sp">
 				<ul>
 					<li><a href="#">ホーム</a></li>
 					<li><a href="#">井原スピリッツ</a></li>
@@ -40,299 +43,261 @@
 				</ul>
 			</div>
 			<!--end menu sp-->
-			<a href="#"><img src="images/btn_banner_pc.jpg" alt="" class="btn_banner_pc"></a>
-			<a href="#"><img src="images/btn_banner_sm.jpg" alt="" class="btn_banner_sm"></a>
-		</div>
+			
+			<a href="#"><img src="images/btn_banner_pc.jpg" alt="" class="btn_banner_pc hidden-pc"></a>
+			<a href="#"><img src="images/btn_banner_sm.jpg" alt="" class="btn_banner_sm hidden-sp show-sp"></a>
+			
+		</header><!--end header-->
 		
-		<div class="clear"></div>
+		<article class="main-content"><!--start article-->
 		
-		<div class="kazunoko">
-			<div class="inner">
-				<div class="select-kazunoko">
-					<img src="images/title_1.png" alt="ヤマニの数の子" class="mg-50-auto disblock hidden-pc">
-					<img src="images/title_1_sp.png" alt="ヤマニの数の子" class="mg-50-auto disblock hidden-sp show-sp w-35" style="max-width:280px;">
-					<div class="text-kazunoko">
-						<p>お正月にかかせない「数の子」。実はDHA 、EPAがたいへん多く含まれており、抗肥満効果・血糖値や血中脂質の改善、記憶学習能力向上にも効果があります。そして意外にもプリン体が極めて少ないのです。おいしいだけでなく、健康のためにも毎日食べたい食品として注目されています。</p>
-						<p>ヤマニの数の子は最良と評価されている北米太平洋産の上質な原卵・抱卵ニシンを原料とし、徹底した衛生管理のもと、ベテランの従業員の目と手で、一つ一つを丁寧に選りすぐっております。さらに二重三重のチェックを繰り返し、お客様に安心してお買い求めいただけるよう努力しております。</p>
-						<p>また、お客様にご満足いただけるよう、日々、研究を重ね商品開発にも邁進。贈答用の最高級品から、普段の食卓にも最適なお求めやすいものまで、多彩なラインアップを取り揃えております。</p>
+			<section class="kazunoko"><!--start kazunoko-->
+				<div class="inner">
+					<div class="about-us-kazunoko">
+						<img src="images/title_1.png" alt="ヤマニの数の子" class="mg-auto dis-block hidden-pc">
+						<img src="images/title_1_sp.png" alt="ヤマニの数の子" class="hidden-sp show-sp" style="max-width:280px;">
+						<div class="text-kazunoko">
+							<p>お正月にかかせない「数の子」。実はDHA 、EPAがたいへん多く含まれており、抗肥満効果・血糖値や血中脂質の改善、記憶学習能力向上にも効果があります。そして意外にもプリン体が極めて少ないのです。おいしいだけでなく、健康のためにも毎日食べたい食品として注目されています。</p>
+							<p>ヤマニの数の子は最良と評価されている北米太平洋産の上質な原卵・抱卵ニシンを原料とし、徹底した衛生管理のもと、ベテランの従業員の目と手で、一つ一つを丁寧に選りすぐっております。さらに二重三重のチェックを繰り返し、お客様に安心してお買い求めいただけるよう努力しております。</p>
+							<p>また、お客様にご満足いただけるよう、日々、研究を重ね商品開発にも邁進。贈答用の最高級品から、普段の食卓にも最適なお求めやすいものまで、多彩なラインアップを取り揃えております。</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		
-		<div class="clear"></div>
-		
-		<div class="inner">
-			<div class="products hidden-pc">
-				<img src="images/title_2.png" alt="商品のご紹介" class="mg-50-auto disblock hidden-pc">
-				<div class="list-of-products">
-					<div class="product">
-						<a href="#"><img src="images/数の子.png" alt="数の子"  class="title_pro"></a>
-						<div class="text_pro">
-						<p class="text_pro_1">凝縮された旨味と独特の甘味、
-							<br>確かな歯ざわり</p>
-						<p class="text_pro_1 text_pro_2">ご贈答用にも最適な最高級品から、普段の食卓にもおすすめのお求めや<br>
-						すい商品まで、ご満足いただけるよう多彩なラインアップをご用意しております。</p>
-						</div>
-						<p class="img_pro">
-							<img src="images/レイヤー 18.png" alt="レイヤー" class="img_product" style="max-width:329px; margin-top:-6%;">
-						</p>
-					</div>
-				
-					<div class="product">
-						<a href="#"><img src="images/いくら・すじこ.png" alt="いくら・すじこ"  class="title_pro"></a>
-						<div class="text_pro">
-						<p class="text_pro_1">ぷりっとした粒の食感、
-							<br>噛むととろりとした旨味と甘み</p>
-						<p class="text_pro_1 text_pro_2">鮮度にこだわったヤマニ独自の製法には、生臭みが出ないような工夫があり、いくら・すじこ本来の味が凝縮されています。</p>
-						</div>
-						<p class="img_pro">
-							<img src="images/レイヤー 28 のコピー 7.png" alt="レイヤー 28 のコピー 7" class="img_product" style="max-width:342px; margin-top:10%;">
-						</p>
-					</div>
-					
-					<div class="product" style="margin-top: 6.5%;">
-						<a href="#"><img src="images/味付子持ち昆布.png" alt="味付子持ち昆布"  class="title_pro"></a>
-						<div class="text_pro" style="width: 57% !important;">
-						<p class="text_pro_1">天然の子持ち昆布に、
-							<br>上品な白醤油で味付けした逸品</p>
-						<p class="text_pro_1 text_pro_2">ニシンが昆布に卵を産みつけることでできる天然の子持ち昆布に、上品な白醤油で味付け。数の子がぎっしり詰まった、歯ごたえのある極上品です。</p>
-						</div>
-						<p class="img_pro">
-							<img src="images/グループ 8.png" alt="グループ 8" class="img_product" style="max-width:261px; margin:10% 0% 0% 13%;">
-						</p>
-					</div>
-				   
-					<div class="product" style="margin: 5.5% 0% 8% 0%;">
-						<a href="#"><img src="images/たらこ・明太子.png" alt="たらこ・明太子"  class="title_pro"></a>
-						<div class="text_pro">
-						<p class="text_pro_1">蓄積された知恵と経験、
-							<br>老舗ならではのよそでは真似できない味</p>
-						<p class="text_pro_1 text_pro_2">ベテラン従業員が熟練の目と手で一つ一つ丁寧に選別した、色・形・大きさ、どれをとっても一級品のたらこ・明太子をご提供いたします。</p>
-						</div>
-						<p class="img_pro">
-							<img src="images/グループ 11.png" alt="グループ 11" class="img_product" style="max-width:293px; margin-top:5%;">
-						</p>
-					</div>
-				</div>
-			</div>
-			<!--sp-->
-			<div class="products hidden-sp show-sp">
-				<img src="images/title_2_sp.png" alt="商品のご紹介" class="mg-50-auto disblock hidden-sp show-sp w-35" style="max-width:241px;">
-
-				<div class="product_sp_1">
-					<a href="#"><img src="images/数の子_sp.png" alt="数の子"  class="title_pro_sp"></a>
-					<div class="text_pro_sp">
-						<p class="text_pro_1_sp">凝縮された旨味と独特の甘味、確かな歯ざわり</p>
-						<p class="img_pro_sp">
-							<img src="images/product_sp_1.png" alt="レイヤー" class="img_product_sp" style="margin-top: -25%;">
-						</p>
-						<p class="text_pro_1_sp text_pro_2_sp">ご贈答用にも最適な最高級品から、普段の食卓にもおすすめのお求めやすい商品まで、ご満足いただけるよう多彩なラインアップをご用意しております。</p>
-					</div>
-				</div>
-				
-				<div class="product_sp">
-					<a href="#"><img src="images/いくら・すじこ_sp.png" alt="いくら・すじこ"  class="title_pro_sp"></a>
-					<div class="text_pro_sp">
-						<p class="text_pro_1_sp">ぷりっとした粒の食感、噛むととろりとした旨味と甘み</p>
-						<p class="img_pro_sp">
-							<img src="images/product_sp_2.png" alt="レイヤー 28 のコピー 7" class="img_product_sp">
-						</p>
-						<p class="text_pro_1_sp text_pro_2_sp">鮮度にこだわったヤマニ独自の製法には、生臭みが出ないような工夫があり、いくら・すじこ本来の味が凝縮されています。</p>
-					</div>
-				</div>
-				
-				<div class="product_sp">
-					<a href="#"><img src="images/味付子持ち昆布_sp.png" alt="味付子持ち昆布"  class="title_pro_sp"></a>
-					<div class="text_pro_sp">
-						<p class="text_pro_1_sp">天然の子持ち昆布に、上品な白醤油で味付けした逸品</p>
-						<p class="img_pro_sp">
-							<img src="images/product_sp_3.png" alt="グループ 8" class="img_product_sp" style="margin-top: -10%;">
-						</p>
-						<p class="text_pro_1_sp text_pro_2_sp">ニシンが昆布に卵を産みつけることでできる天然の子持ち昆布に、上品な白醤油で味付け。数の子がぎっしり詰まった、歯ごたえのある極上品です。</p>
-					</div>
-			   </div>
-			   
-			   <div class="product_sp">
-					<a href="#"><img src="images/たらこ・明太子.png" alt="たらこ・明太子"  class="title_pro_sp"></a>
-					<div class="text_pro_sp">
-						<p class="text_pro_1_sp">蓄積された知恵と経験、老舗ならではのよそでは真似できない味</p>
-						<p class="img_pro_sp">
-							<img src="images/グループ 11.png" alt="グループ 11" class="img_product_sp" style="margin-top: -10%;">
-						</p>
-						<p class="text_pro_1_sp text_pro_2_sp">ベテラン従業員が熟練の目と手で一つ一つ丁寧に選別した、色・形・大きさ、どれをとっても一級品のたらこ・明太子をご提供いたします。</p>
-					</div>
-              </div>
+			</section><!--end kazunoko-->
+			
+			<section class="products hidden-pc"><!--start products-->
+				<div class="inner">
+					<div class="product-content">
+						<img src="images/title_2.png" alt="商品のご紹介" class="mg-auto dis-block hidden-pc">
+						<div class="list-of-products">
+							<!-- produc 1-->
+							<div class="product">
+								<a href="#" class="mt-9"><img src="images/数の子.png" alt="数の子"  class="title-pro"></a>
+								<div class="text-pro mt-9">
+									<p class="text-pro-1">凝縮された旨味と独特の甘味、
+										<br>確かな歯ざわり</p>
+									<p class="text-pro-2">ご贈答用にも最適な最高級品から、普段の食卓にもおすすめのお求めや<br>
+									すい商品まで、ご満足いただけるよう多彩なラインアップをご用意しております。</p>
+								</div>
+								<p class="reg-product">
+									<img src="images/レイヤー 18.png" alt="レイヤー" class="product-image" style="max-width:329px;">
+								</p>
+							</div>
+						
+							<!--product 2-->
+							<div class="product">
+								<a href="#"><img src="images/いくら・すじこ.png" alt="いくら・すじこ"  class="title-pro"></a>
+								<div class="text-pro">
+									<p class="text-pro-1">ぷりっとした粒の食感、
+										<br>噛むととろりとした旨味と甘み</p>
+									<p class="text-pro-2">鮮度にこだわったヤマニ独自の製法には、生臭みが出ないような工夫があり、いくら・すじこ本来の味が凝縮されています。</p>
+								</div>
+								<p class="reg-product">
+									<img src="images/レイヤー 28 のコピー 7.png" alt="レイヤー 28 のコピー 7" class="product-image" style="max-width:342px;">
+								</p>
+							</div>
 							
-			</div>
-			<!--end-sp-->
+							<!-- produc 3-->
+							<div class="product">
+								<a href="#"><img src="images/味付子持ち昆布.png" alt="味付子持ち昆布"  class="title-pro"></a>
+								<div class="text-pro" style="width: 57% !important;">
+								<p class="text-pro-1">天然の子持ち昆布に、
+									<br>上品な白醤油で味付けした逸品</p>
+								<p class="text-pro-2">ニシンが昆布に卵を産みつけることでできる天然の子持ち昆布に、上品な白醤油で味付け。数の子がぎっしり詰まった、歯ごたえのある極上品です。</p>
+								</div>
+								<p class="reg-product">
+									<img src="images/グループ 8.png" alt="グループ 8" class="product-image" style="max-width:261px;">
+								</p>
+							</div>
+						   
+						    <!-- produc 4-->
+							<div class="product">
+								<a href="#"><img src="images/たらこ・明太子.png" alt="たらこ・明太子"  class="title-pro"></a>
+								<div class="text-pro">
+								<p class="text-pro-1">蓄積された知恵と経験、
+									<br>老舗ならではのよそでは真似できない味</p>
+								<p class="tex-pro-2">ベテラン従業員が熟練の目と手で一つ一つ丁寧に選別した、色・形・大きさ、どれをとっても一級品のたらこ・明太子をご提供いたします。</p>
+								</div>
+								<p class="reg-product">
+									<img src="images/グループ 11.png" alt="グループ 11" class="product-image" style="max-width:293px;">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section><!--end products-->
 			
-			<div class="clear"></div>
+			<section class="reg-order"><!--start order-->
+				<div class="inner">
+					<div class="order">
+						  <div class="phone">
+							  <h3>電話でご注文</h3>
+							  <span><img src="images/btn_tel.jpg" alt="" class="btn_tel">0120-016-443</span>
+							  <p>受付時間 9:00-17:00（毎日受付）／通話料無料</p>
+						  </div>
+						  <div class="fax">
+							  <h3>FAXでご注文</h3>
+							  <span><img src="images/btn_tel.jpg" alt="" class="btn_tel">0120-016-728</span>
+							  <p>受付時間 24時間年中無休／通話料無料</p>
+						  </div>
+						  <div class="btn_order">
+							  <a href="#"><img src="images/btn_content.png" alt="" class="hidden-pc btn_content_pc"></a>
+							  <a href="#"><img src="images/btn_content_sm.jpg" alt="" class="hidden-sp show-sp"></a>
+						  </div>
+					</div>
+				</div>
+			</section><!--end order-->
 			
-			<div class="order">
-              <div class="phone">
-                  <h3>電話でご注文</h3>
-                  <span><img src="images/btn_tel.jpg" alt="" class="btn_tel">0120-016-443</span>
-                  <p>受付時間 9:00-17:00（毎日受付）／通話料無料</p>
-              </div>
-              <div class="fax">
-                  <h3>FAXでご注文</h3>
-                  <span><img src="images/btn_tel.jpg" alt="" class="btn_tel">0120-016-728</span>
-                  <p>受付時間 24時間年中無休／通話料無料</p>
-              </div>
-              <div class="btn_order">
-                  <a href="#"><img src="images/btn_content.png" alt="" class="btn_content_pc"></a>
-                  <a href="#"><img src="images/btn_content_sm.jpg" alt="" class="btn_content_sm"></a>
-              </div>
-          </div>
-		  
-		  <div class="clear"></div>
-		  
-		  <div class="spirits">
-			<img src="images/title_3.png" alt="井原スピリッツ" class="mg-50-auto disblock hidden-pc">
-			<img src="images/title_3_sp.png" alt="井原スピリッツ" class="mg-50-auto disblock hidden-sp show-sp w-35" style="max-width:265px;">
-			<div class="img_spirits hidden-pc">
-				<ul>
-					<li>
-						<a href="#"><img src="images/ihara_1_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/ihara_2_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/ihara_3_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/ihara_4_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/ihara_5_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					
-				</ul>
-			</div>
-			<!--sp-->
-			<div class="img_spirits hidden-sp show-sp">
-				<ul class="img_spirits_r1">
-					<li>
-						<a href="#"><img src="images/ihara_1_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/ihara_2_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/ihara_3_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>	
-				</ul>
-				<ul  class="img_spirits_r2">
-					<li>
-						<a href="#"><img src="images/ihara_4_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/ihara_5_pc.jpg" alt="" class="ihara_pc"></a>
-					</li>
-				</ul>
-			</div>
-			<!--end sp-->
-		</div>
-		
-		<div class="clear"></div>
-		
-		<div class="company">
-          <img src="images/title_4.png" alt="井原水産について" class="mg-50-auto disblock hidden-pc">
-		  <img src="images/title_4_sp.png" alt="井原水産について" class="mg-50-auto disblock hidden-sp show-sp w-35" style="max-width:320px; width:45%;">
-          <div class="img_company hidden-pc">
-			<ul>
-				<li>
-					<a href="#"><img src="images/company_1.jpg" alt="" class="company_pc"></a>
-				</li>
-				<li>
-					<a href="#"><img src="images/company_2.jpg" alt="" class="company_pc"></a>
-				</li>
-				<li class="pd_company">
-					<a href="#"><img src="images/company_3.jpg" alt="" class="company_pc"></a>
-				</li>
-				<li class="pd_company">
-					<a href="#"><img src="images/company_4.jpg" alt="" class="company_pc"></a>
-				</li>
-				<li class="pd_company">
-					<a href="#"><img src="images/company_5.jpg" alt="" class="company_pc"></a>
-				</li>
-				<li class="pd_company">
-					<a href="#"><img src="images/company_6.jpg" alt="" class="company_pc"></a>
-				</li>
-			</ul>
-          </div>
-		  <!--sp-->
-			<div class="img-company hidden-sp show-sp">
-				<ul>
-					<li>
-						<a href="#"><img src="images/company_1_sm.jpg" alt="" class="company_sm"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/company_2_sm.jpg" alt="" class="company_sm"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/company_3_sm.jpg" alt="" class="company_sm"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/company_4_sm.jpg" alt="" class="company_sm"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/company_5_sm.jpg" alt="" class="company_sm"></a>
-					</li>
-					<li>
-						<a href="#"><img src="images/company_6_sm.jpg" alt="" class="company_sm"></a>
-					</li>
-				</ul>
-			</div>
-		  <!--end sp-->
-		</div>
-		
-		<div class="clear"></div>
-		
-		<div class="information">
-          <img src="images/title_5.png" alt="お知らせ" class="mg-50-auto disblock hidden-pc">
-		  <img src="images/title_5_sp.png" alt="お知らせ" class="mg-50-auto disblock hidden-sp show-sp w-35" style="max-width:154px;">
-          <div class="text_information">
-              <dl>
-                <dt>2016/12/01</dt>
-                <dd><a href="#">数の子といくらのセット　通常価格5,756円のところ4,300円で販売しております。　※のし包装対応不可</a></dd>
+			<section class="reg-spirits"><!--start spirits-->
+				<div class="inner">
+					<div class="spirits">
+						<img src="images/title_3.png" alt="井原スピリッツ" class="mg-auto dis-block hidden-pc">
+						<img src="images/title_3_sp.png" alt="井原スピリッツ" class="hidden-sp show-sp" style="max-width:265px;">
+						<div class="img_spirits hidden-pc">
+							<ul>
+								<li>
+									<a href="#"><img src="images/ihara_1_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/ihara_2_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/ihara_3_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/ihara_4_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/ihara_5_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								
+							</ul>
+						</div>
+						<!--sp-->
+						<div class="img_spirits hidden-sp show-sp">
+							<ul class="img_spirits_r1">
+								<li>
+									<a href="#"><img src="images/ihara_1_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/ihara_2_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/ihara_3_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>	
+							</ul>
+							<ul  class="img_spirits_r2">
+								<li>
+									<a href="#"><img src="images/ihara_4_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/ihara_5_pc.jpg" alt="" class="ihara_pc"></a>
+								</li>
+							</ul>
+						</div>
+						<!--end sp-->
+					</div>
+				</div>
+			</section><!--end spirits-->
+			
+			<section class="reg-company"><!--start company-->
+				<div class="inner">
+					<div class="company">
+						<img src="images/title_4.png" alt="井原水産について" class="mg-auto dis-block hidden-pc">
+						<img src="images/title_4_sp.png" alt="井原水産について" class="hidden-sp show-sp" style="max-width:320px; width:45%;">
+						<div class="img_company hidden-pc">
+							<ul>
+								<li>
+									<a href="#"><img src="images/company_1.jpg" alt="" class="company_pc"></a>
+								</li>
+								<li>
+									<a href="#"><img src="images/company_2.jpg" alt="" class="company_pc"></a>
+								</li>
+								<li class="pd_company">
+									<a href="#"><img src="images/company_3.jpg" alt="" class="company_pc"></a>
+								</li>
+								<li class="pd_company">
+									<a href="#"><img src="images/company_4.jpg" alt="" class="company_pc"></a>
+								</li>
+								<li class="pd_company">
+									<a href="#"><img src="images/company_5.jpg" alt="" class="company_pc"></a>
+								</li>
+								<li class="pd_company">
+									<a href="#"><img src="images/company_6.jpg" alt="" class="company_pc"></a>
+								</li>
+							</ul>
+						  </div>
+						  <!--sp-->
+							<div class="img-company hidden-sp show-sp">
+								<ul>
+									<li>
+										<a href="#"><img src="images/company_1_sm.jpg" alt="" class="company_sm"></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/company_2_sm.jpg" alt="" class="company_sm"></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/company_3_sm.jpg" alt="" class="company_sm"></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/company_4_sm.jpg" alt="" class="company_sm"></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/company_5_sm.jpg" alt="" class="company_sm"></a>
+									</li>
+									<li>
+										<a href="#"><img src="images/company_6_sm.jpg" alt="" class="company_sm"></a>
+									</li>
+								</ul>
+							</div>
+						  <!--end sp-->
+						</div>
+					</div>
+			</section><!--end company-->
+			
+			<section class="reg-information"><!--start information-->
+				<div class="inner">
+					<div class="information">
+					  <img src="images/title_5.png" alt="お知らせ" class="mg-auto dis-block hidden-pc">
+					  <img src="images/title_5_sp.png" alt="お知らせ" class="hidden-sp show-sp" style="max-width:154px;">
+					  <div class="text_information">
+						  <dl>
+							<dt>2016/12/01</dt>
+							<dd><a href="#">数の子といくらのセット　通常価格5,756円のところ4,300円で販売しております。　※のし包装対応不可</a></dd>
 
-                <dt>2016/11/25</dt>
-                <dd><a href="#">【完売御礼】干し数の子は、お陰様をもちまして完売致しました。</a></dd>
+							<dt>2016/11/25</dt>
+							<dd><a href="#">【完売御礼】干し数の子は、お陰様をもちまして完売致しました。</a></dd>
 
-                <dt>2016/10/03</dt>
-                <dd><a href="#">高島屋 新宿店 大北海道展 11/3（木）～11/8（火）に出店いたします。</a></dd>
+							<dt>2016/10/03</dt>
+							<dd><a href="#">高島屋 新宿店 大北海道展 11/3（木）～11/8（火）に出店いたします。</a></dd>
 
-                <dt>2016/09/25</dt>
-                <dd><a href="#">AIR DO機内誌『rapora 10月号』に「鰊の切込み（数の子入り）」が紹介されました。</a></dd>
+							<dt>2016/09/25</dt>
+							<dd><a href="#">AIR DO機内誌『rapora 10月号』に「鰊の切込み（数の子入り）」が紹介されました。</a></dd>
 
-                <dt>2016/09/01</dt>
-                <dd><a href="#">浜松遠鉄百貨店 秋の大北海道展 10/12（水）～10/24（月）に出店いたします。</a></dd>
-              </dl>
-          </div>
-		</div>
+							<dt>2016/09/01</dt>
+							<dd><a href="#">浜松遠鉄百貨店 秋の大北海道展 10/12（水）～10/24（月）に出店いたします。</a></dd>
+						  </dl>
+					  </div>
+					</div>
+				</div>
+			</section><!--end information-->
+			
+		</article><!--end article-->
 		
-		<div class="clear"></div>
-   
-		<div class="footer">
+		<footer><!--start footer-->
 			<div class="inner">
-				<div class="nav_footer">
+				<div class="nav-footer">
 				  <ul>
 					  <li><a href="#">オンラインショップ</a></li>
 					  <li><a href="#">プライバシーポリシー</a></li>
 					  <li><a href="#">お問合わせ</a></li>
 				  </ul>
 				</div>
-			</div><!--inner--> 
-		</div>
-			
-		</div>
-		
-		<div class="copyright">
-			  (C) IHARA & CO.,LTD. ALL rights reserved
-		</div>
-		
+			</div>
+			<div class="copyright">
+				(C) IHARA & CO.,LTD. ALL rights reserved
+			</div>
+		</footer><!--end footer-->
+	</div>
   </body>
 </html>
