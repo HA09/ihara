@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 @font-face 
 {
   font-family: HarenosoraMincho;
-  src: url(‘../fonts/Harenosora.otf’) format(‘opentype’);
+  src: url(../fonts/Harenosora.otf);
   font-weight: normal;
   font-style: normal; 
 }
@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 @font-face 
 {
   font-family: Hirakakupro;
-  src: url(‘../fonts/hirakakupro-w3.otf’) format(‘opentype’);
+  src: url(../fonts/hirakakupro-w3.otf);
   font-weight: normal;
   font-style: normal; 
 }
@@ -51,7 +51,7 @@ body {
 	font-family: HarenosoraMincho;
 	color: #000000;
 	font-size: 16px;
-	background:#ffffff;
+	background:#fff;
 }
 ol, ul {
 	list-style: none;
@@ -112,6 +112,10 @@ div.inner
 }
 
 /*header*/
+#header{
+	background: #fcfbfb;
+}
+
 .navi
 {
 	width: 30px;
@@ -138,19 +142,19 @@ div.inner
 
 .navi ul li a
 {
-	text-decoration:none;
-	color:#000000;
 	display: block;
     padding: 13px 0px 13px 0px;
-	line-height:1.2;
+	text-decoration:none;
+	color:#000;
+	line-height:1;
 }
 
 .navi ul li:first-child a
 {
-	text-decoration:none;
-	color:#000000;
 	display: block;
     padding: 0px 0px 13px 0px;
+	text-decoration:none;
+	color:#000000;
 	line-height:1.2;
 }
 
@@ -174,7 +178,7 @@ a:hover img.btn-banner-pc
 }
 
 /*kazunoko*/
-.kazunoko
+#kazunoko
 {
 	background:#fcfbfb;
 	margin-bottom:106px;
@@ -205,7 +209,7 @@ a:hover img.btn-banner-pc
 	margin-top:9%;
 }
 
-.products
+#products
 {
 	margin-bottom:80px;
 }
@@ -269,7 +273,7 @@ img.product-image
 }
 
 /*order*/
-.reg-order{
+#reg-order{
 	margin-bottom:150px;
 }
 
@@ -338,7 +342,7 @@ img.product-image
 }
 
 /*spirits*/
-.reg-spirits{
+#reg-spirits{
 	margin-bottom:153px;
 }
 
@@ -375,7 +379,7 @@ img.ihara-pc
 }	
 
 /*company*/	
-.reg-company{
+#reg-company{
 	margin-bottom:150px;
 }
 
@@ -417,7 +421,7 @@ img.ihara-pc
 }
 
 /*information*/
-.reg-information{
+#reg-information{
 	margin-bottom:160px;
 }
 
@@ -429,7 +433,7 @@ dl dt
 {
     font-family: Hirakakupro;
     font-style: normal;
-    color: #999999;
+    color: #999;
     float: left;
     padding: 16px 45px 20px 5px;
 }
@@ -443,7 +447,7 @@ dl dd
 dl dd a
 {
 	font-family: Hirakakupro;
-    color: #000000;
+    color: #000;
     text-decoration: none;
     border-bottom: 1px solid #b8bbbb;
 }
@@ -471,7 +475,7 @@ dl dd a:hover
 .nav-footer ul li a
 {
 	text-decoration: none;
-	color:#999999;
+	color:#999;
 	font-family:Hirakakupro;
 	font-size:13px;
 }
@@ -495,7 +499,7 @@ dl dd a:hover
 .nav-footer ul li:nth-child(2n) a
 {
 	text-decoration: none;
-	color:#999999;
+	color:#999;
 	font-family:Hirakakupro;
 	font-size:13px;
 }
@@ -510,12 +514,12 @@ dl dd a:hover
 
 .copyright
 {
-	background:#000000;
+	background:#000;
 	text-align: center;
 	font-family: Hirakakupro;
 	font-size: 12px;
 	font-style: normal;
-	color: #ffffff;
+	color: #fff;
 	text-align:center;
 	padding:20px;
 }
@@ -546,7 +550,7 @@ dl dd a:hover
 		height: auto;
 		display: block;
 		max-width: 970px;
-		background: #ffffff;
+		background: #fff;
 		width: 96%;
 	}
 	
