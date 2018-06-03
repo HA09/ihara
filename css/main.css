@@ -348,24 +348,18 @@ img.product-image
 
 .img-spirits{	
 	margin-top:50px;
-	overflow: auto;
-}
-
-.img-spirits ul 
-{
-	width: 100%;
 	text-align:center;
-	float: left;
+	width: 100%;
 }
 
-.img-spirits ul li
+.img-spirits li
 {
 	width: 19%;
     display: inline-block;
 	margin-left:0.2%;
 }
 
-.img-spirits ul li:first-child 
+.img-spirits li:first-child 
 {
 	margin-left:0%;
 	margin-bottom: 7px;
@@ -435,7 +429,7 @@ dl dt
     font-style: normal;
     color: #999;
     float: left;
-    padding: 16px 45px 20px 5px;
+    padding: 15px 45px 20px 5px;
 }
 
 dl dd 
