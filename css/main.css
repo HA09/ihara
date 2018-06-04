@@ -75,7 +75,7 @@ table {
 	100% {transform: scale(1.0);}
 }
 
-div.inner
+.inner
 {
 	margin: 0 auto;
     height: auto;
@@ -89,15 +89,6 @@ div.inner
 	display:none;
 }
 
-.clear-fix{
-	clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
-}
-
 .w-100
 {
 	width:100%;
@@ -108,6 +99,23 @@ div.inner
 }
 
 .dis-block{
+	display:block;
+}
+
+.clear-fix{
+	clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.img-spirits-r1 li a,
+.img-spirits-r2 li a,
+.img-r1 li a,
+.img-r2 li a,
+.img-spirits li a{
 	display:block;
 }
 
@@ -165,14 +173,14 @@ div.inner
 	color:#db0300;
 }
 
-img.btn-banner-pc
+.btn-banner-pc
 {
 	position: fixed;
     top: 245px;
     right: 0px;
 }
 
-a:hover img.btn-banner-pc
+a:hover .btn-banner-pc
 {
 	opacity: 0.7;
 }
@@ -181,7 +189,7 @@ a:hover img.btn-banner-pc
 #kazunoko
 {
 	background:#fcfbfb;
-	margin-bottom:106px;
+	margin-bottom:8%;
 }
 
 .about-us-kazunoko
@@ -209,6 +217,10 @@ a:hover img.btn-banner-pc
 	margin-top:9%;
 }
 
+.mb-0{
+	margin-bottom:0% !important;
+}
+
 #products
 {
 	margin-bottom:80px;
@@ -227,7 +239,7 @@ a:hover img.btn-banner-pc
 .product {
     width: 100%;
     margin-bottom: 30px;
-	float:left;
+	float: left;
 }
 
 .product a{
@@ -252,19 +264,19 @@ a:hover img.btn-banner-pc
 	float:left;
 }
 
-p.text-pro-1
+.text-pro-1
 {
     font-size: 20px;
 	margin-bottom: 30px;
 }
 
-p.reg-product
+.reg-product
 {
     width: 28%;
 	float:right;
 }
 
-img.product-image
+.product-image
 {
 	animation-name: example;
     animation-duration: 4s;
@@ -281,7 +293,7 @@ img.product-image
 {
 	width: 100%;
     border-bottom: 1px solid #b8bbbb;
-    height: 125px;
+    height: 127px;
     border-color: #b8bbbb;
     border-top: double #b8bbbb;
 }
@@ -290,19 +302,17 @@ img.product-image
 {
 	width: 30%;
     float: left;
-    margin:25px 25px 25px 10px;
+    margin:23px 25px 27px 10px;
 }
 
 .phone h3 , .fax h3
 {
-	margin-bottom: 5px;
 	font-size: 16px;
 }
 
 .phone p , .fax p
 {
 	font-size:13px;
-	margin-top: 12px;
 }
 
 .phone span , .fax span
@@ -313,7 +323,7 @@ img.product-image
 
 .btn-tel
 {
-	width: 10%;
+	width: 11%;
     max-width: 34px;
     padding-right: 5px;
 }
@@ -322,13 +332,13 @@ img.product-image
 {
 	width: 30%;
     float: left;
-    margin:25px 0px;
+    margin:23px 0px 27px 0px;
 }
 
 .btn-order
 {
 	float:right;
-	margin:20px 0px 25px 0px;
+	margin:23px 0px 27px 0px;
 	width:35%;
 }
 
@@ -387,13 +397,7 @@ img.ihara-pc
 	text-align:center;
 }
 
-.img-r1 li:first-child
-{
-	width: 49%;
-    display: inline-block;
-}
-
-.img-r1 li:nth-child(2)
+.img-r1 li
 {
 	width: 49%;
     display: inline-block;
@@ -406,12 +410,19 @@ img.ihara-pc
     display: inline-block;
 }
 
-.company-pc
+.img-big
 {
 	animation-name: example;
 	animation-duration: 4s;
 	width: 100%;
     max-width: 480px;
+}
+
+.img-small {
+    animation-name: example;
+    animation-duration: 4s;
+    width: 100%;
+    max-width: 235px;
 }
 
 /*information*/
@@ -468,6 +479,7 @@ dl dd a:hover
 
 .nav-footer ul li a
 {
+	display: block;
 	text-decoration: none;
 	color:#999;
 	font-family:Hirakakupro;
@@ -475,27 +487,23 @@ dl dd a:hover
 }
 
 .nav-footer ul li a:hover
-{
+{	
 	text-decoration: none;
 	color:#dd0300;
 	font-family:Hirakakupro;
 	font-size:13px;
 }
 
-.nav-footer ul li:nth-child(2n)
-{
-	display: inline-block;
-	border-right: 1px solid #999999;
-	padding:0px 10px 0px 10px;
-	border-left: 1px solid #999999;
-}
-
 .nav-footer ul li:nth-child(2n) a
 {
+	padding:0px 10px 0px 10px;
+	display: block;
 	text-decoration: none;
 	color:#999;
 	font-family:Hirakakupro;
 	font-size:13px;
+	border-right: 1px solid #999999;
+	border-left: 1px solid #999999;
 }
 
 .nav-footer ul li:nth-child(2n) a:hover
@@ -522,8 +530,82 @@ dl dd a:hover
 /*---------------------------------------*/
 /*sp*/
 
+@media only screen and (min-width: 751px) and (max-width:1130px) 
+{
+
+	body 
+	{
+		line-height: 1;
+		position: relative;
+		font-family: HarenosoraMincho;
+		color: #000;
+		font-size: 14px;
+		background: #fff;
+	}
+	
+	.navi
+	{
+		position: absolute;
+		top: 27px;
+		left: 35px;
+		width: 30px;
+	}
+	
+	.btn-banner-pc 
+	{
+		position: absolute;
+		top: 245px;
+		right: 0px;
+	}
+	
+	.inner
+	{
+		margin: 0 auto;
+		height: auto;
+		display: block;
+		max-width: 970px;
+		background: #fff;
+		width: 97%;
+	}
+	
+	.img-r1 li {
+		width: 48%;
+		display: inline-block;
+	}
+	
+	.img-r2 li {
+		width: 23.6%;
+		margin-top: 0.7%;
+		display: inline-block;
+	}
+	
+	.text-kazunoko {
+		width:90%;
+	}
+	
+	.phone h3, 
+	.fax h3 {
+		margin-bottom: 1%;
+	}
+	
+	.phone p, 
+	.fax p {
+		margin-top: 2%;
+	}
+}
+
 @media only screen and (max-width: 750px) 
 {
+	
+	body 
+	{
+		line-height: 1.5;
+		position: relative;
+		font-family: HarenosoraMincho;
+		color: #000000;
+		font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (750 - 320)));
+		background: #fff;
+	}
 	
 	@keyframes example 
 	{
@@ -553,13 +635,13 @@ dl dd a:hover
 		width: 95%;
 		position: absolute;
 		top: 0.2%;
-		left: 2%;
+		left: 2.6%;
 	}
 	
 	.navi ul 
 	{
-		width: 90%;
-		padding: 2% 0% 0% 1%;
+		width: 100%;
+		margin:1% 0%;
 	}
 	
 	.navi ul li
@@ -569,48 +651,54 @@ dl dd a:hover
 		border-right: 0px;
 	}
 
-	.navi ul li a , .navi ul li:first-child a 
+	.navi ul li a , 
+	.navi ul li:first-child a 
 	{
-		border-right: 2px solid #adadad;
-		font-size: 14px;
-		line-height: 1.3;
+		
+		padding:0px 12px 0px 0px;
+		display:block;
+		font-size: calc(14px + (21 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1;
 		font-weight:bold;
-		padding: 0px 7px 0px 0px;
+		border-right: 2px solid #adadad;
 	}
 	
 	.navi ul li:last-child a 
 	{
-		border-right: 0px;
+		padding: 0;
 		display:block;
-		padding: 0px;
+		font-size: calc(14px + (21 - 14) * ((100vw - 320px) / (750 - 320)));
+		line-height: 1;
+		font-weight:bold;
+		border-right: 0px;
 	}
 	
-	img.logo-sp
+	.logo-sp
 	{
 		display: inline-block;
-		width: 50%;
+		width: 33.5%;
 		max-width: 280px;
-		margin-left: 1%;
 	}
 	
-	img.btn-banner-sp
+	.btn-banner-sp
 	{
 		position: absolute;
 		display: block;
-		right: 1%;
+		right: 2%;
 		top: 0%;
 		width: 45%;
 		max-width: 200px;
 	}
 	
 	/*kazunoko*/
+	
 	.about-us-kazunoko {
 		padding-top: 5.5%;
 	}
 	
-	.title {
-		margin: 0 auto;
-		width: 50%;
+	.title-1{
+		max-width:280px;
+		width:40%;
 	}
 	
 	.text-kazunoko {
@@ -619,7 +707,291 @@ dl dd a:hover
 	}
 	
 	.text-kazunoko p {
-		margin-bottom: 75px;
+		margin-bottom: 5%;
 	}
 	
+	/*products*/
+	#products {
+		margin-bottom: 10.5%;
+	}
+	
+	.list-of-products {
+		margin-top: 6%;
+	}
+	
+	.mt-6{
+		margin-top: 6.8%;
+	}
+	
+	.mt-2{
+		margin-top: 2%;
+	}
+	
+	.mt-8{
+		margin-top: 8%;
+	}
+	
+	.title-2{
+		max-width:241px;
+		width:40%;
+	}
+	
+	.product {
+		margin-bottom: 16%;
+	}
+	
+	.product a {
+		width: 4%;
+		float: left;
+		margin-left: 2.2%;
+	}
+
+	.title-pro-sp {
+		width: 100%;
+		border-top: 2px solid #adadad;
+		padding-top: 65%;
+		float: left;
+		max-width: 29px;
+	}
+	
+	.text-pro-sp {
+		width: 83% !important;
+		float: left;
+		margin-left: 10%;
+	}
+	
+	.text-pro-1-sp
+	{
+		float: left;
+		width: 43.2%;
+		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.text-pro-2-sp
+	{
+		margin-top:2.5%;
+		float:left;
+		width: 100%;
+	}
+	
+	.text-pro-2-sp:before{
+		clear: both;
+		content: "."
+		display: block;
+		height: 0;
+		line-height: 0;
+		visibility: hidden;
+	}
+	
+	.reg-product-sp
+	{
+		width: 49%;
+		float: right;
+	}
+	
+	.product-image-sp
+	{
+		float: right;
+		width: 90%;
+		animation-name: example;
+		animation-duration: 4s;
+	}
+	
+	.pro-img-1{
+		margin-top: -20%;
+		max-width: 450px;
+	}
+	
+	.pro-img-2{
+		max-width:403px;
+	}
+	
+	.pro-img-3{
+		max-width:374px;
+	}
+	
+	.pro-img-4{
+		max-width:293px;
+	}
+	
+	/*order*/
+	#reg-order {
+		margin-bottom: 14%;
+	}
+
+	.order {
+		height: auto;
+	}
+	.phone {
+		margin: 7% auto 9% auto;
+		float:none;
+		width: 80%;
+	}
+	
+	.fax {
+		width: 80%;
+		float: none;
+		margin: 0 auto 11% auto;
+	}
+	
+	.btn-order {
+		margin: 0 auto 10% auto;
+		float: none;
+		width: 80%;	
+	}
+	
+	.phone h3, 
+	.fax h3 {
+		font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.phone span, 
+	.fax span {
+		font-size: calc(14px + (48 - 14) * ((100vw - 320px) / (750 - 320)));
+		font-weight: bold;
+	}
+	
+	.btn-tel-sp {
+		width: 10%;
+		margin-right: 5px;
+	}
+	
+	.phone p, 
+	.fax p {
+		font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.btn_content_sm
+	{
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		animation-name: example;
+		animation-duration: 4s;
+		max-width: 620px;
+	}
+	
+	.btn_content_sm:hover
+	{
+		opacity:0.5;
+	}
+	
+	/*spirits*/
+	#reg-spirits {
+		margin-bottom: 12%;
+	}
+
+	.title-3{
+		max-width:265px;
+		width:40%;
+	}
+	
+	.img-spirits-sp {
+		margin-top: 12.3%;
+	}
+	
+	.img-spirits-r1{
+		text-align: center;
+		width: 100%;
+	}
+	
+	.img-spirits-r2{
+		margin-left: 2.8%;
+		width: 99%;
+	}
+	
+	.img-spirits-r1 li {
+		margin-bottom: 1%;
+		display:inline-block;
+		width: 30%;
+	}
+	
+	.img-spirits-r2 li{
+		display:inline-block;
+		width:30.5%;
+	}
+	
+	.img-r1 li a,
+	.img-r2 li a{
+		display:block;
+	}
+	
+	/*company*/
+	#reg-company {
+		margin-bottom: 12.5%;
+	}
+
+	.title-4{
+		max-width:320px;
+		width:40%;
+	}
+	
+	.img-company {
+		margin-top: 9.6%;
+	}
+	
+	.img-company ul
+	{
+		text-align: center;
+		width: 100%;
+	}
+	
+	.img-company ul li:nth-child(2n+1){
+		width: 48%;
+		display: inline-block;
+		margin-bottom: 1%;
+	}
+	
+	.img-company ul li:nth-child(2n+2){
+		width: 48%;
+		display: inline-block;
+		margin-bottom: 1%;
+	}
+	
+	.img-company ul li a{
+		display:block;
+	}
+	
+	.company-sm{
+		width: 100%;
+	}
+	
+	/*information*/
+	#reg-information {
+		margin-bottom: 20%;
+	}
+
+	.text-information {
+		margin-top: 12.5%;
+	}
+	
+	.text-information dt {
+		padding: 7% 0% 0% 0%;
+		float:none;
+	}
+	
+	.text-information dd {
+		padding: 2% 0% 8% 0%;
+	}
+	
+	.pt-0{
+		padding-top:0% !important;
+	}
+	
+	/*footer*/
+	.nav-footer ul li a {
+		font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.nav-footer ul li:nth-child(2n) a {
+		font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
+	
+	.nav-footer {
+		margin-bottom: 6%;
+	}
+	
+	.copyright {
+		font-size: calc(14px + (24 - 14) * ((100vw - 320px) / (750 - 320)));
+	}
 }
