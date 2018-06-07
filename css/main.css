@@ -194,7 +194,7 @@ a:hover .btn-banner-pc
 .kazunoko
 {
 	background:#fcfbfb;
-	margin-bottom:8%;
+	margin-bottom:110px;
 }
 
 .about-us-kazunoko
@@ -458,7 +458,7 @@ img.ihara-pc
 	margin-top:60px;
 }
 
-dl dt 
+.date
 {
     font-family: Hirakakupro;
     font-style: normal;
@@ -467,13 +467,13 @@ dl dt
     padding: 15px 45px 20px 5px;
 }
 
-dl dd 
+.event
 {
     padding: 12px 0px 20px 0px;
     border-bottom: 1px dotted #b8bbbb;
 }
 
-dl dd a
+.event a
 {
 	font-family: Hirakakupro;
     color: #000;
@@ -481,7 +481,7 @@ dl dd a
     border-bottom: 1px solid #b8bbbb;
 }
 
-dl dd a:hover
+.event a:hover
 {
 	font-family: Hirakakupro;
 	font-size: 16px;
@@ -496,12 +496,12 @@ dl dd a:hover
 	text-align: center;
 }
 
-.nav-footer ul li
+.nav-footer li
 {
 	display: inline-block;
 }
 
-.nav-footer ul li a
+.nav-footer li a
 {
 	display: block;
 	text-decoration: none;
@@ -510,7 +510,7 @@ dl dd a:hover
 	font-size:13px;
 }
 
-.nav-footer ul li a:hover
+.nav-footer li a:hover
 {	
 	text-decoration: none;
 	color:#dd0300;
@@ -518,7 +518,7 @@ dl dd a:hover
 	font-size:13px;
 }
 
-.nav-footer ul li:nth-child(2n) a
+.nav-footer li:nth-child(2n) a
 {
 	padding:0px 10px 0px 10px;
 	display: block;
@@ -530,7 +530,7 @@ dl dd a:hover
 	border-left: 1px solid #999999;
 }
 
-.nav-footer ul li:nth-child(2n) a:hover
+.nav-footer li:nth-child(2n) a:hover
 {
 	text-decoration: none;
 	color:#dd0300;
@@ -685,9 +685,9 @@ dl dd a:hover
 	.navi ul li:first-child a 
 	{
 		
-		padding:0px 12px 0px 0px;
+		padding:0px 1vw 0px 0px;
 		display:block;
-		font-size: calc(10.5px + (16 - 10.5) * ((100vw - 320px) / (750 - 320)));
+		font-size: 2.5vw;
 		line-height: 1;
 		font-weight:bold;
 		border-right: 2px solid #adadad;
@@ -697,7 +697,7 @@ dl dd a:hover
 	{
 		padding: 0;
 		display:block;
-		font-size: calc(10.5px + (16 - 10.5) * ((100vw - 320px) / (750 - 320)));
+		font-size: 2.5vw;
 		line-height: 1;
 		font-weight:bold;
 		border-right: 0px;
@@ -767,7 +767,7 @@ dl dd a:hover
 	}
 	
 	.product {
-		margin-bottom: 16%;
+		margin-bottom: 10%;
 	}
 	
 	.product a {
