@@ -592,6 +592,7 @@ dl dd a:hover
 	.phone p, 
 	.fax p {
 		margin-top: 2%;
+		line-height: 1.2;
 	}
 }
 
