@@ -287,7 +287,7 @@ a:hover .btn-banner-pc
 .product-image
 {
 	animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 10s;
     width: 100%;
 	float: right;
 }
@@ -402,7 +402,7 @@ a:hover .btn-banner-pc
 img.ihara-pc
 {
 	animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 10s;
     width: 100%;
 	max-width: 186px;
 }	
@@ -462,7 +462,7 @@ img.ihara-pc
 .img-big
 {
 	animation-name: example;
-	animation-duration: 4s;
+	animation-duration: 10s;
 	width: 100%;
     max-width: 480px;
 	height: auto;
@@ -471,7 +471,7 @@ img.ihara-pc
 
 .img-small {
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 10s;
     width: 100%;
     max-width: 235px;
 	height: auto;
