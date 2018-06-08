@@ -752,6 +752,9 @@ img.ihara-pc
 	}
 	
 	/*kazunoko*/
+	.kazunoko{
+		margin-bottom: 16%;
+	}
 	
 	.about-us-kazunoko {
 		padding-top: 5.5%;
@@ -951,27 +954,22 @@ img.ihara-pc
 	}
 	
 	.img-spirits-r1{
-		text-align: center;
 		width: 100%;
+		margin-left:1%;
 	}
 	
 	.img-spirits-r2{
 		width: 100%;
+		margin-left:1%;
 	}
 	
 	.img-spirits-r1 li {
-		margin-bottom: 1%;
+		margin-bottom: 3%;
 		display:inline-block;
 		width: 30%;
 	}
 	
-	.img-spirits-r2 li:first-child{
-		display:inline-block;
-		width:30%;
-		margin-left:3.3%;
-	}
-	
-	.img-spirits-r2 li:last-child{
+	.img-spirits-r2 li{
 		display:inline-block;
 		width:30%;
 	}
@@ -1008,13 +1006,13 @@ img.ihara-pc
 	.img-company ul li:nth-child(2n+1){
 		width: 46%;
 		display: inline-block;
-		margin-bottom: 1%;
+		margin-bottom: 3%;
 	}
 	
 	.img-company ul li:nth-child(2n+2){
 		width: 46%;
 		display: inline-block;
-		margin-bottom: 1%;
+		margin-bottom: 3%;
 	}
 	
 	.img-company ul li a{
@@ -1063,5 +1061,17 @@ img.ihara-pc
 	
 	.copyright {
 		font-size: calc(12px + (19 - 12) * ((100vw - 320px) / (750 - 320)));
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.img-spirits-r1{
+		width: 100%;
+		margin-left:0.5%;
+	}
+	
+	.img-spirits-r2{
+		width: 100%;
+		margin-left:0.5%;
 	}
 }
